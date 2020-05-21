@@ -85,6 +85,11 @@ User goals are:
 - Confidence in the system so it allows us to comply with food safety while removing paperwork from our processes. 
 
 ## Business Goals
+- An app that's fit for purpose and generates revenue for the business.
+
+- An app that is welcoming to the user, informative and explains why it is beneficial to them.
+
+- Emphasis on helping the customer achieve paperless compliance, and highlight that the developer has experience first hand working in a food manufacturing environment.
 
 The target businesses to use this application are:
 
