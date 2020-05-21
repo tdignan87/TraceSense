@@ -149,3 +149,9 @@ target="_blank" rel=""/> Flowchart to be added and created.
 
 ### Features on every page:
 
+- Navbar
+    - The navigation bar features the TraceSense company logo..
+    - For users using the app there is a list of navbar options available regardless of the page loaded. These are:
+    1. Products
+    2. Support
+    3. Pricing
