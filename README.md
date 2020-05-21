@@ -96,3 +96,12 @@ The target businesses to use this application are:
 ## Developer Goals
 
 Developer goals are:
+
+- Learning about MVT's (similar to MVC) and how to build full stack applications.
+
+- Learning about deploying full applications to heroku.
+
+- Future goal is to use this as part of an actual business.
+
+- Fit for purpose app which users will definately see as a benefit to there business.
+
