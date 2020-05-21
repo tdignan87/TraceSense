@@ -115,7 +115,8 @@ The following design choices were made:
 
 ### Colours
 
-* The colors for this project were choosen based on the two primary colours in my company logo. These colours are
+* The colours for this project were choosen based on the two primary colours in my company logo. These colours are
 
 - ![#0069A8](https://via.placeholder.com/15/0069A8/000000?text=+) `#0069A8`
 - ![#42BFE0](https://via.placeholder.com/15/42BFE0/000000?text=+) `#42BFE0`
+
