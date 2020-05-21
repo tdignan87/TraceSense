@@ -71,3 +71,14 @@ The goal of this software is to create a responsive, suitable, and fully functio
 specifically designed so they can complete audits easily without having to record it on paper and then update an excel document at a later stage.
 
 The selling point for this software will be ease of use and removal of paper from the process.
+
+## User Stories:
+User goals are:
+
+## Business Goals
+
+The target businesses to use this application are:
+
+## Developer Goals
+
+Developer goals are:
