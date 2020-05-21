@@ -70,7 +70,7 @@ Tracesense is my own company i created in November 2019 and decided to go with t
 The goal of this software is to create a responsive, suitable, and fully functional application for completing food safety auditing tasks. The software is aimed at food manufacturers
 specifically designed so they can complete audits easily without having to record it on paper and then update an excel document at a later stage.
 
-The selling point for this software will be ease of use and removal of paper from the process.
+The selling point for this software will be ease of use and removal of paper from the process. In the future the aim is to have lots of traceability data capturing functionality to allow companies to remove the majority of paperwork from there processes.
 
 ## User Stories:
 User goals are:
