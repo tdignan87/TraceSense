@@ -74,6 +74,15 @@ The selling point for this software will be ease of use and removal of paper fro
 
 ## User Stories:
 User goals are:
+- Ability to try the products before purchasing to ensure it's suitable for my needs.
+
+- Ability to purchase the product easily to unlock the full functionality.
+
+- Ease of use across any of my devices.
+
+- Secure so my data is not easily accessible by other parties.
+
+- Confidence in the system so it allows us to comply with food safety while removing paperwork from our processes. 
 
 ## Business Goals
 
