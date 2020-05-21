@@ -131,3 +131,21 @@ To go to the main wireframes page please click [this](https://github.com/tdignan
 - [Browser Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-main-page.png)
 - [Browser Register Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-up.png)
 - [Browser Signed In Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-in-home.png)
+
+
+
+## Flow Chart
+
+This flowchart was created on Microsoft Powerpoint to explain the flow of how the application should run.<br>
+User flowchart: Flowchart to be added and created.
+
+
+Administrator options:
+target="_blank" rel=""/> Flowchart to be added and created.
+
+# Features
+
+## Existing Features
+
+### Features on every page:
+
