@@ -123,3 +123,11 @@ The following design choices were made:
 ## Wireframes
 
 The wireframes were created using [Balsamiq](https://balsamiq.com/) during the scope part of the design and planning process for this project. I found Balsamiq very useful for helping me plan out exactly what i needed for my application to come together.
+
+To go to the main wireframes page please click [this](https://github.com/tdignan87/traceVMS/tree/master/wireframes) link.
+
+#### Browser
+
+- [Browser Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-main-page.png)
+- [Browser Register Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-up.png)
+- [Browser Signed In Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-in-home.png)
