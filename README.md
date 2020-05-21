@@ -120,3 +120,6 @@ The following design choices were made:
 - ![#0069A8](https://via.placeholder.com/15/0069A8/000000?text=+) `#0069A8`
 - ![#42BFE0](https://via.placeholder.com/15/42BFE0/000000?text=+) `#42BFE0`
 
+## Wireframes
+
+The wireframes were created using [Balsamiq](https://balsamiq.com/) during the scope part of the design and planning process for this project. I found Balsamiq very useful for helping me plan out exactly what i needed for my application to come together.
