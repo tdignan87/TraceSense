@@ -105,3 +105,6 @@ Developer goals are:
 
 - Fit for purpose app which users will definately see as a benefit to there business.
 
+## Design Choices
+
+The following design choices were made:
