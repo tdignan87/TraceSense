@@ -7,9 +7,9 @@
 
 ## Introduction
 
-Tracesense is an application used for conducting GMP(good manufacturing practice) audits electronically to remove paperwork from a manufacturing environment. Tracesense will allow the user to complete the audit via a tablet, phone, or PC and there is no installation required.<br> Tracesense allows for completing glass and hard plastic audits which is also a food compliance requirement.
+Tracesense is an application used for conducting GMP(good manufacturing practice) audits electronically to remove paperwork from a manufacturing environment. Tracesense will allow the user to complete the audit via a tablet, phone, or PC and there is no installation required.<br> Tracesense also allows for completing glass and hard plastic audits which is a food safety requirement.
 
-Tracesense software provides insight and visibility to help raise quality and safety standards across an organization. 
+<strong>Tracesense software provides insight and visibility to help raise quality and safety standards across an organization.</strong> 
 
 Tracesense will record your non compliant items and email them to a specific recipient list at your request to action. 
 
