@@ -62,3 +62,8 @@ Tracesense is my own company i created in November 2019 and decided to go with t
   
 
 ----
+
+
+# UX
+
+## Project Goals
