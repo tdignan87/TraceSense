@@ -180,7 +180,7 @@ Tracesense relies on the following data structure:
 TBL_GMP_QUESTIONS
 
 | Title | data type | value | Primary Key | Allow Null |
---- | --- | --- | --- 
+--- | --- | --- | --- | ---
 GMP_QUESTIONID | Integer | unique | Yes| No |
 QUESTION | VarCar(255) | text | No| No |
 CREATED | DateTime | DateTime | No| No |
@@ -190,7 +190,7 @@ DELETED | bool | bool | No | Yes |
 TBL_GHP_QUESTIONS
 
 | Title | data type | value | Primary Key | Allow Null |
---- | --- | --- | --- 
+--- | --- | --- | --- | ---
 GHP_QUESTIONID | Integer | unique | Yes | No |
 QUESTION | VarChar(255) | text | No | No |
 CREATED | DateTime | DateTime | No | No |
@@ -199,7 +199,7 @@ DELETED | bool | bool | No | Yes |
 TBL_GMP_ANSWERS
 
 | Title | data type | value | Primary Key | Allow Null |
---- | --- | --- | --- 
+--- | --- | --- | --- | ---
 GMP_ID | Integer | unique | Yes | No |
 GMP_QUESTIONID | int | unique | No | No |
 ANSWER_CORRECT | VarChar(30)| text | No | Yes |
