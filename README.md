@@ -147,7 +147,7 @@ target="_blank" rel=""/> Flowchart to be added and created.
 
 ## Existing Features
 
-### Features on every page:
+### Features on every Page:
 
 - Navbar
     - The navigation bar features the TraceSense company logo..
@@ -156,8 +156,8 @@ target="_blank" rel=""/> Flowchart to be added and created.
     2. Support
     3. Pricing
 
-    ### Features on main page:
-
+### Features on main Page:
+To Be Completed
 
 ## Features left to Implement
 
