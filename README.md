@@ -131,6 +131,15 @@ To go to the main wireframes page please click [this](https://github.com/tdignan
 - [Browser Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-main-page.png)
 - [Browser Register Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-up.png)
 - [Browser Signed In Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-in-home.png)
+- [Browser Sign Up](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-in-home.png)
+- [Browser Start Audit](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-start-gmp-audit.png)
+- [Browser Completed Tasks](https://github.com/tdignan87/TraceSense/blob/master/wireframes/completed-tasks.png)
+- [Browser Outstanding Tasks](https://github.com/tdignan87/TraceSense/blob/master/wireframes/outstanding-tasks.png)
+- [Browser Recipient List](https://github.com/tdignan87/TraceSense/blob/master/wireframes/recipient-list.png)
+
+
+
+
 
 
 
