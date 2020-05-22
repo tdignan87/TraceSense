@@ -159,7 +159,29 @@ target="_blank" rel=""/> Flowchart to be added and created.
     ### Features on main page:
 
 
-## Features Left to Implement
+## Features left to Implement
+
+1. Start Up Inspection Checks
+Ability to create start up check safety questions prior to production runs starting.
+
+2. Stock Receive Checks
+Create questions for booking in stock at site, if any stock item does not satisfy booking in quality requirements then user records in the app and email is sent to QA notifying them
+that goods have failed the goods inbound checks.
+
+3. Recipes
+Store recipe information and costing in the app which can be accessed at any time.
+
+4. Commodities
+Store commodity information and suppliers in the app such as sugars, butter etc and which is the supplier.
+
+5. Hygiene Records
+Complete hygiene record inspection checks in the app to remove paperwork from there processes.
+
+6. Maintenance Request Form
+User can create a maintenance request (form) which will be emailed to the maintenance department for them to acknowledge and complete the request.
+
+7. Quality Assurance Non Conformance Log
+In the App it would be great if during production quality assurance personnel can log non conforming issues in the system. They select what product is running, and record non-conforming details for that product. 
 
 
 # Information Architecture
