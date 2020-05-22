@@ -177,3 +177,11 @@ Typical types of data stored in the database are
 
 Tracesense relies on the following data structure:
 
+TBL_GMP_QUESTIONS
+
+| Title | data type | value | Primary Key |
+--- | --- | --- | --- 
+GMP_QUESTIONID | Integer | unique | Yes
+QUESTION | VarCar(255) | text | No
+CREATED | DateTime | DateTime | No
+DELETED | bool | bool | No
