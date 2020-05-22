@@ -140,13 +140,9 @@ To go to the main wireframes page please click [this](https://github.com/tdignan
 
 
 
-
-
-
-
 ## Flow Chart
 
-Still to be completed
+Still to be completed this section.
 
 # Features
 
