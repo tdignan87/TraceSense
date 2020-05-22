@@ -146,12 +146,7 @@ To go to the main wireframes page please click [this](https://github.com/tdignan
 
 ## Flow Chart
 
-This flowchart was created on Microsoft Powerpoint to explain the flow of how the application should run.<br>
-User flowchart: Flowchart to be added and created.
-
-
-Administrator options:
-target="_blank" rel=""/> Flowchart to be added and created.
+Still to be completed
 
 # Features
 
