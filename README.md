@@ -194,7 +194,7 @@ TBL_GHP_QUESTIONS
 GHP_QUESTIONID | Integer | unique | Yes | No |
 QUESTION | VarChar(255) | text | No | No |
 CREATED | DateTime | DateTime | No | No |
-DELETED | bool | bool | No | Yes |
+DELETED | bool | bool | int | Yes |
 
 TBL_GMP_ANSWERS
 
@@ -204,7 +204,28 @@ GMP_ID | Integer | unique | Yes | No |
 GMP_QUESTIONID | int | unique | No | No |
 ANSWER_CORRECT | VarChar(30)| text | No | Yes |
 ANSWER_INCORRECT | VarChar(255) | text| No | Yes |
-USERID| int| unique| No | No |
+USERID| int| unique| int | No |
 STAMP| DateTime| DateTime| No | No |
 IMAGE| Blob|Image| No |Yes |
 
+TBL_GHP_ANSWERS
+
+| Title | data type | value | Primary Key | Allow Null |
+--- | --- | --- | --- | ---
+GHP_ID | Integer | unique | Yes | No |
+GHP_QUESTIONID | int | unique | No | No |
+ANSWER_CORRECT | VarChar(30)| text | No | Yes |
+ANSWER_INCORRECT | VarChar(255) | text| No | Yes |
+USERID| int| unique| int | No |
+STAMP| DateTime| DateTime| No | No |
+IMAGE| Blob|Image| No |Yes |
+
+USERS
+
+| Title | data type | value | Primary Key | Allow Null |
+--- | --- | --- | --- | ---
+USERID| Integer | unique | Yes | No |
+CODE| VarChar(30)| string | No | No |
+NAME| VarChar(255)| string| No | No |
+PASSWD| VarChar(30)| string| No| No |
+TRUSTED_SUPERVISOR| Bool| Bool| No | No |
