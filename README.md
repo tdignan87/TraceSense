@@ -124,13 +124,14 @@ The following design choices were made:
 
 The wireframes were created using [Balsamiq](https://balsamiq.com/) during the scope part of the design and planning process for this project. I found Balsamiq very useful for helping me plan out exactly what i needed for my application to come together.
 
-To go to the main wireframes page please click [this](https://github.com/tdignan87/traceVMS/tree/master/wireframes) link.
+To go to the main wireframes page please click [this](https://github.com/tdignan87/TraceSense/tree/master/wireframes) link.
 
 #### Browser
 
 - [Browser Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-main-page.png)
 - [Browser Register Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-up.png)
 - [Browser Signed In Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-in-home.png)
+
 
 
 
@@ -251,3 +252,21 @@ CODE| VarChar(30)| string | No | No |
 NAME| VarChar(255)| string| No | No |
 PASSWD| VarChar(30)| string| No| No |
 TRUSTED_SUPERVISOR| Bool| Bool| No | No |
+
+ALERTUSRS
+
+| Title | data type | value | Primary Key | Allow Null |
+--- | --- | --- | --- | ---
+ALERTID| Integer | unique | Yes | No |
+NAME| VarChar(30)| string | No | No |
+EMAIL| VarChar(255)| string| No | No |
+DEPARTMENTID| Integer| unique| No | No |
+
+DEPARTMENTS
+
+| Title | data type | value | Primary Key | Allow Null |
+--- | --- | --- | --- | ---
+DEPARTMENTID| Integer | unique | Yes | No |
+DEPARTMENT| VarChar(255)| string| No | No |
+
+
