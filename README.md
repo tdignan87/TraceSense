@@ -155,3 +155,25 @@ target="_blank" rel=""/> Flowchart to be added and created.
     1. Products
     2. Support
     3. Pricing
+
+    ### Features on main page:
+
+
+## Features Left to Implement
+
+
+# Information Architecture
+
+[MySQL](https://www.mysql.com/) was the database choice for my project. An relational database management system was the most appropriate database choice for this project. 
+
+
+Typical types of data stored in the database are
+
+- Id
+- Int
+- String
+- Boolean
+- DateTime
+
+Tracesense relies on the following data structure:
+
