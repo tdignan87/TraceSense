@@ -142,7 +142,9 @@ To go to the main wireframes page please click [this](https://github.com/tdignan
 
 ## Flow Chart
 
-Still to be completed this section.
+
+
+- [User Flow Chart](https://github.com/tdignan87/TraceSense/blob/master/static/flowcharts/ts-user-process-flow.jpg)
 
 # Features
 
