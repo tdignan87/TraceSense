@@ -144,7 +144,10 @@ To go to the main wireframes page please click [this](https://github.com/tdignan
 
 Please see below a process flow chart of how users will use the application.
 
-- [User Flow Chart](https://github.com/tdignan87/TraceSense/blob/master/wireframes/flowcharts/ts-user-process-flow.jpg)
+<div align="center">
+<img src="https://github.com/tdignan87/TraceSense/blob/master/wireframes/flowcharts/ts-user-process-flow.jpg" target="_blank" rel=""/>
+</div>
+
 
 # Features
 
