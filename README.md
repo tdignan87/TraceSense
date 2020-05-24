@@ -127,8 +127,8 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) during the s
 
 
 #### Browser
-- ![Browser Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/Browser%20Main%20Page.png)
-- ![Browser Sign Up](https://github.com/tdignan87/TraceSense/blob/master/wireframes/Browser%20Sign%20Up.png)
+- ![Browser Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-main-page.png)
+- ![Browser Sign Up](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-up.png)
 - ![Browser Audit Start](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-audit-start.png)
 - ![Browser Completed Actions](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-completed-actions.png)
 - ![Browser Configuration](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-config-page.png)
