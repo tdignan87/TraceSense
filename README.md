@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Tracesense is an application used for conducting GMP(good manufacturing practice) audits electronically. Tracesense will allow the user to complete the audit via a tablet, phone, or PC and there is no installation required.<br> Tracesense also allows for completing glass and hard plastic audits which is a food safety requirement.
+Tracesense is an application used for conducting GMP(good manufacturing practice) audits electronically. Tracesense will allow the user to complete the audit via a tablet, phone, or PC and there is no installation required.<br>
 
 <strong>Tracesense software provides insight and visibility to help raise quality and safety standards across an organisation.</strong> 
 
@@ -68,12 +68,13 @@ Tracesense is my own company i created in November 2019 and decided to go with t
 
 ## Project Goals
 The goal of this software is to create a responsive, suitable, and fully functional application for completing food safety auditing tasks. The software is aimed at food manufacturers
-specifically designed so they can complete audits easily without having to record it on paper and then update an excel document at a later stage.
+specifically designed so they can complete GMP audits easily without having to record it on paper and then update an excel document at a later stage.
 
 The selling point for this software will be ease of use and removal of paper from the process. In the future the aim is to have lots of traceability data capturing functionality to allow companies to remove the majority of paperwork from there processes.
 
 ## User Stories:
 User goals are:
+
 - Ability to try the products before purchasing to ensure it's suitable for my needs.
 
 - Ability to purchase the product easily to unlock the full functionality.
@@ -211,14 +212,6 @@ CREATED | DateTime | DateTime | No| No |
 DELETED | bool | bool | No | Yes |
 
 
-TBL_GHP_QUESTIONS
-
-| Title | data type | value | Primary Key | Allow Null |
---- | --- | --- | --- | ---
-GHP_QUESTIONID | Integer | unique | Yes | No |
-QUESTION | VarChar(255) | text | No | No |
-CREATED | DateTime | DateTime | No | No |
-DELETED | bool | bool | int | Yes |
 
 TBL_GMP_ANSWERS
 
@@ -232,17 +225,6 @@ USERID| int| unique| int | No |
 STAMP| DateTime| DateTime| No | No |
 IMAGE| Blob|Image| No |Yes |
 
-TBL_GHP_ANSWERS
-
-| Title | data type | value | Primary Key | Allow Null |
---- | --- | --- | --- | ---
-GHP_ID | Integer | unique | Yes | No |
-GHP_QUESTIONID | int | unique | No | No |
-ANSWER_CORRECT | VarChar(30)| text | No | Yes |
-ANSWER_INCORRECT | VarChar(255) | text| No | Yes |
-USERID| int| unique| int | No |
-STAMP| DateTime| DateTime| No | No |
-IMAGE| Blob|Image| No |Yes |
 
 USERS
 
