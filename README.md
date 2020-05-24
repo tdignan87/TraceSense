@@ -125,6 +125,40 @@ The following design choices were made:
 
 The wireframes were created using [Balsamiq](https://balsamiq.com/) during the scope part of the design and planning process for this project. I found Balsamiq very useful for helping me plan out exactly what i needed for my application to come together.
 
+
+#### Browser
+- ![Browser Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/Browser%20Main%20Page.png)
+- ![Browser Sign Up](https://github.com/tdignan87/TraceSense/blob/master/wireframes/Browser%20Sign%20Up.png)
+- ![Browser Audit Start](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-audit-start.png)
+- ![Browser Completed Actions](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-completed-actions.png)
+- ![Browser Configuration](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-config-page.png)
+- ![Browser Delete Audits](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-delete-audits.png)
+- ![Browser Departments](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-departments-page.png)
+- ![Browser Email Panel](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-email-panel.png)
+- ![Browser Outstanding Actions](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-outstanding-actions.png)
+- ![Browser Sign In](https://github.com/tdignan87/TraceSense/blob/master/wireframes/browser-sign-in.png)
+- ![Mobile Audit Start](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-audit-start.png)
+- ![Mobile Completed Actions](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-completed-actions.png)
+- ![Mobile Configuration Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-config-page.png)
+- ![Mobile Delete Audits](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-delete-audits.png)
+- ![Mobile Departments](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-departments.png)
+- ![Mobile Email Panel](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-email-panel.png)
+- ![Mobile Main Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-main-page.png)
+- ![Mobile Outstanding Tasks](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-outstanding-tasks.png)
+- ![Mobile Sign In](https://github.com/tdignan87/TraceSense/blob/master/wireframes/mobile-sign-in-page.png)
+- ![Tablet Audit Start](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-audit-start.png)
+- ![Tablet Completed Actions](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-completed-actions.png)
+- ![Tablet Configuration Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-config-page.png)
+- ![Tablet Delete Audit](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-delete-audit.png)
+- ![Tablet Departments Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-departments-page.png)
+- ![Tablet Email Panel](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-email-panel.png)
+- ![Tablet Home Page](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-home-page.png)
+- ![Tablet Outstanding Actions](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-outstanding-actions.png)
+- ![Tablet Sign In](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-sign-in.png)
+- ![Tablet Sign Up](https://github.com/tdignan87/TraceSense/blob/master/wireframes/tablet-sign-up.png)
+
+
+
 To go to the main wireframes page please click [this](https://github.com/tdignan87/TraceSense/tree/master/wireframes) link.
 
 #### Browser
