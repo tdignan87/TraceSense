@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
-            'read_default_file': 'env/db/db.cnf'
+            'read_default_file': 'env/db/db.cnf',
         }
     #  'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
