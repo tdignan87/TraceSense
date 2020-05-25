@@ -1,5 +1,8 @@
 asgiref==3.2.7
 Django==3.0.6
 django-forms-bootstrap==3.1.0
+mysql-connector-python==8.0.20
+protobuf==3.11.3
 pytz==2020.1
+six==1.15.0
 sqlparse==0.3.1
