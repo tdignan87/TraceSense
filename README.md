@@ -163,11 +163,6 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) during the s
 
 To go to the main wireframes page please click [this](https://github.com/tdignan87/TraceSense/tree/master/wireframes) link.
 
-#### Browser
-
-
-
-
 
 
 ## Flow Chart
@@ -236,7 +231,7 @@ Typical types of data stored in the database are
 - Boolean
 - DateTime
 
-Tracesense relies on the following data structure:
+Tracesense relies on the following data structure in addition to the django default authentication tables:
 
 TBL_GMP_QUESTIONS
 
