@@ -6,13 +6,13 @@
     color: #fafafa;
 }
 
-.navbar {
-    background-color: #292b2c;
+.navbar a {
+    display: block;
     color: #fafafa;
-}
-
-body {
-    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .jumbotron {
@@ -21,5 +21,10 @@ body {
 }
 
 .jumbo-main-title {
+    font-family: 'Fira Sans', sans-serif;
     font-size: 3.6rem;
+}
+
+.jumbo-img {
+    float: right;
 }
