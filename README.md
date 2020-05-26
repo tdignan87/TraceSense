@@ -112,7 +112,7 @@ The following design choices were made:
 
 ### Fonts
 
-* Google Font [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) was chosen as it looks great across multiple interfaces.
+* Google Font [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) was chosen as it looks great across multiple interfaces.
 
 ### Colours
 
