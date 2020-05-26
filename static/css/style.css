@@ -2,7 +2,13 @@
 .main-navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #173a48;
+    background-color: #292b2c;
+    color: #fafafa;
+}
+
+.navbar {
+    background-color: #292b2c;
+    color: #fafafa;
 }
 
 body {
@@ -10,5 +16,10 @@ body {
 }
 
 .jumbotron {
-    background-color: #173a48;
+    background-color: #292b2c;
+    color: #fafafa;
+}
+
+.jumbo-main-title {
+    font-size: 3.6rem;
 }
