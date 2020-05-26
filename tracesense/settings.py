@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_mysql',
-    'django_forms_bootstrap',
+    'authentication',
+   # 'django_forms_bootstrap',
 ]
 
 MIDDLEWARE = [
@@ -125,4 +126,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 """path for static files"""
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
