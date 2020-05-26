@@ -4,6 +4,7 @@
     padding-bottom: 1rem;
     background-color: #292b2c;
     color: #fafafa;
+    height: 5rem;
 }
 
 .navbar a {
@@ -27,4 +28,14 @@
 
 .jumbo-img {
     float: right;
+}
+
+body {
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 0px;
+    }
 }
