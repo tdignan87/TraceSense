@@ -1,1 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+.main-navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #173a48;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.jumbotron {
+    background-color: #173a48;
+}
