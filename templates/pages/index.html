@@ -1,1 +1,116 @@
- {% extends "layouts/base.html" %}{% block content %} {% endblock %}
+{% extends "layouts/base.html" %}{% block content %}
+
+
+<!-- Features Section-->
+<div class="main">
+    <section class="container">
+        <h1>Features</h1>
+        <div class="row">
+            <div class="col-md-3 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Vision Systems</h4>
+                        <p class="card-text">Automate your production quality checks with image-based inspection systems. 100% verification checks. Suitable for wrapping machines etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5">
+                <div class="card h-100">
+                    <div class=" card-body ">
+                        <h4 class="card-title ">Coding Assurance</h4>
+                        <p class="card-text ">Automate your production printer message selection to eliminate manual input and prevent the likelihood of wrong informationg being printed. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5 ">
+                <div class="card h-100 ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Electronic Auditing</h4>
+                        <p class="card-text ">Use our system to conduct your GMP & Compliance Audits using a tablet. No need for recording on paper then transferring to a word document to email later!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5 ">
+                <div class="card h-100 ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Visitor & Contractor Management</h4>
+                        <p class="card-text ">Want a easy way to manage your approved contractors? traceVMS can help you achieve health and safety and food safety compliance. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container">
+
+        <div class="row" id="main-container">
+            <div class="col-md-8 mb-5">
+                <h2 class="main">Paperless Auditing</h2>
+                <hr>
+                <div class="container">
+                    <img src="/static/images/ipad-audit.png" alt="Tracesense" style="width:100%;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <h2 class="first">What is it?</h2>
+                <hr>
+                <p>Tracesense auditing software allows you to complete your quality audits electronically via a PC, tablet or phone. It's easy to use and will save you lots of time.</p>
+                <h2 class="secondary">How does it Work?</h2>
+                <hr>
+                <ul>
+                    <li>Improve efficiency, raise quality and cut costs.</li>
+                    <li>Customisable - create your audit to suit your business.</li>
+                    <li>Remove paperwork from your process.</li>
+                    <li>Keep track of corrective actions.</li>
+                    <li> Real time reporting.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="pricing-section">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-6 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">£0 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Limited to 3 Questions</li>
+                        <li>No Access to Reports</li>
+                        <li>Record corrective actions</li>
+                        <li>Use any PC, Phone or Tablet</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                </div>
+            </div>
+            <div class="card mb-6 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Dynamic</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">£200 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Unlimited Reports</li>
+                        <li>Dynamic - Create your own audit questions</li>
+                        <li>Email Audits</li>
+                        <li>Record Corrective Actions</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
