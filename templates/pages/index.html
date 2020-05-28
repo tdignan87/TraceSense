@@ -70,42 +70,54 @@
         </div>
     </section>
 
-    <section class="container" id="pricing-section">
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-6 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Free</h4>
+    <section class="pricing py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Free Tier -->
+                <div class="col-lg-6">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+                            <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">£0 <small class="text-muted">/ mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>Limited to 3 Questions</li>
-                        <li>No Access to Reports</li>
-                        <li>Record corrective actions</li>
-                        <li>Use any PC, Phone or Tablet</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-                </div>
-            </div>
-            <div class="card mb-6 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Dynamic</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">£200 <small class="text-muted">/ mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>Unlimited Reports</li>
-                        <li>Dynamic - Create your own audit questions</li>
-                        <li>Email Audits</li>
-                        <li>Record Corrective Actions</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                <div class="col-lg-6">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                            <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
-</div>
 
 
 
@@ -113,4 +125,5 @@
 
 
 
-{% endblock %}
+
+    {% endblock %}
