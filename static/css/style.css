@@ -40,6 +40,16 @@ body {
     padding-top: 40px;
 }
 
+.features-title {
+    color: #ee6c4d;
+    text-decoration: underline;
+    text-decoration-color: #0077b6;
+}
+
+.section-title {
+    color: #ee6c4d;
+}
+
 @media screen and (max-width: 768px) {
     body {
         padding-top: 0px;
