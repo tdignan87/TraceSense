@@ -15,17 +15,11 @@
     font-size: 17px;
 }
 
-.btn-signup {
-    padding-right: 3rem;
-    background-color: #293241;
-    color: #fafafa;
-    border-style: none;
-}
-
 .btn-login {
     background-color: #ee6c4d;
     color: #fafafa;
     border-style: none;
+    width: 20%;
 }
 
 .jumbotron {
