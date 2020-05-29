@@ -66,7 +66,7 @@ section.pricing {
 
 .pricing .card-title {
     margin: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     letter-spacing: .1rem;
     font-weight: bold;
 }
@@ -174,4 +174,16 @@ section.pricing {
     .pricing .card:hover .btn {
         opacity: 1;
     }
+}
+
+
+/* Support page CSS Styling */
+
+#support-section {
+    padding-top: 5rem;
+}
+
+#company-info {
+    padding-top: 2rem;
+    text-align: center;
 }
