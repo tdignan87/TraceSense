@@ -4,4 +4,4 @@ def main_page(request):
     return render(request,"pages/index.html")
 
 def support_page(request):
-    return render(request,"support.html")
+    return render(request,"pages/support.html")
