@@ -20,6 +20,6 @@ from authentication.views import main_page, support_page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',main_page),
-    path("/support",support_page),
+    path("support/",support_page),
 ]
  
