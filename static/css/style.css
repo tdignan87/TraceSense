@@ -187,3 +187,9 @@ section.pricing {
     padding-top: 2rem;
     text-align: center;
 }
+
+.support-header {
+    background-color: #2980b9;
+    color: #fafafa;
+    text-align: center;
+}
