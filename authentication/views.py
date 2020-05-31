@@ -5,3 +5,6 @@ def main_page(request):
 
 def support_page(request):
     return render(request,"pages/support.html")
+
+def about_page(request):
+    return render(request,"pages/about.html")
