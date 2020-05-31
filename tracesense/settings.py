@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'django_mysql',
     'authentication',
     'send',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount'
    # 'django_forms_bootstrap',
 ]
 
