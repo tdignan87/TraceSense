@@ -193,3 +193,22 @@ section.pricing {
     color: #fafafa;
     text-align: center;
 }
+
+
+/* About Page CSS Styling */
+
+.about-area {
+    padding-top: 5rem;
+}
+
+.about-cards {
+    padding-top: 3rem;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+}
