@@ -6,9 +6,14 @@ let featuresSection = document.getElementById("features-area");
  */
 
 $("#learn-more-btn").click(function() {
-    console.log("clicked btn");
     $('html, body').animate({
         scrollTop: $("#features-area").offset().top
     }, 1000);
 
+})
+
+$("#pricing-link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#pricing-area").offset().top
+    }, 1000)
 })
