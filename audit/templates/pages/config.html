@@ -1,0 +1,75 @@
+{% extends "layouts/base.html" %} {% block content %} {% if user.is_authenticated %}
+<section class="container" id="admin-contain">
+    <h1 class="header-title">Audit Configuration</h1>
+    <div class="row" id="main-container">
+        <div class="col-md-12 mb-15">
+            <div class="card">
+                <h5 class="card-header">GMP Audit</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Visitors Configuration</h5>
+                    <p class="card-text">Settings for allowing preset authorised visitors who have completed site induction.</p>
+                    <div class="row">
+                        <div class="col-sm-4"><a href="" class="btn btn-success btn-block">Add Audit</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">Edit Audit</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-danger btn-block">Delete Audit</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">Recipients List</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">Outstanding Tasks</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">Completed Tasks</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="main-container">
+        <div class="col-md-12 mb-15">
+            <div class="card">
+                <h5 class="card-header">Settings</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Company Configuration</h5>
+                    <p class="card-text">Settings for configuring approved companies</p>
+                    <div class="row">
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">Alert Recipients</a></div>
+                        <div class="col-sm-4"> <a href="" class="btn btn-primary btn-block">Departments</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-danger btn-block">Delete Alert Recipient</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="main-container">
+        <div class="col-md-12 mb-15">
+            <div class="card">
+                <h5 class="card-header">Reports</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Questions Configuration</h5>
+                    <p class="card-text">Settings for creating contractor questions.</p>
+                    <div class="row">
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">View Open Actions</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">View Complete Audits</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">View Closed Actions</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">View Departments</a></div>
+                        <div class="col-sm-4"><a href="" class="btn btn-primary btn-block">View Alert Recipients</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+{% else %}
+
+<div class="container" id="form-section">
+
+    <div class="card">
+        <h1 class="sign-in-title">Warning</h1>
+        <div class="card-body">
+            <p>Please ensure your account is created/verified. Please contact us for technical support if required.</p>
+        </div>
+    </div>
+</div>
+
+
+{% endif %} {% endblock %}
