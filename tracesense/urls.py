@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from authentication.views import main_page, support_page, about_page
+from audit.views import config
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +25,7 @@ urlpatterns = [
     path("send/", include("send.urls")),
     path("about/",about_page, name="about"),
     path("accounts/", include("allauth.urls")),
+    path("config/", config),
 ]
  
  
