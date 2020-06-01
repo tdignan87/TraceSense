@@ -212,3 +212,16 @@ section.pricing {
 .card-footer {
     text-align: center;
 }
+
+.sign-in-title {
+    padding-top: 6rem;
+    text-align: center;
+}
+
+#form-section {
+    padding-top: 5rem;
+}
+
+.centered-p {
+    text-align: center;
+}
