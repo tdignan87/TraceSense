@@ -225,3 +225,40 @@ section.pricing {
 .centered-p {
     text-align: center;
 }
+
+#admin-contain {
+    background-color: #2980b9;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #0069A8;
+}
+
+.card-header {
+    background-color: #0069A8;
+    color: #fafafa;
+}
+
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+}
+
+.col-sm-4 {
+    padding-bottom: 2rem;
+}
+
+.user-status {
+    padding-left: 2rem;
+    color: #fafafa;
+}
