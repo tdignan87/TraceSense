@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def config(request):
+    """ A view to return the main home page """
+    return render(request,"pages/config.html")
