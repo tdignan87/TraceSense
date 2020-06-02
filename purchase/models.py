@@ -39,5 +39,3 @@ class Order(models.Model):
         super().save(*args, **kwargs)
          
     
-
-        
