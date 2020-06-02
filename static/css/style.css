@@ -262,3 +262,8 @@ section.pricing {
     padding-left: 2rem;
     color: #fafafa;
 }
+
+.user-logged-in {
+    color: #ee6c4d;
+    font-weight: bold;
+}
