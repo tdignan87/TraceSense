@@ -1,7 +1,8 @@
-{% extends "layouts/base.html" %} {% block content %}
+{% extends "layouts/base.html" %} {% load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/purchase.css' %}"> {% endblock %} {% block content %}
 <div class="container" id="form-section">
     <div class="card">
-        <h1 class="sign-in-title">Purchase</h1>
+        <h1 class="sign-in-title">Purchase our Product</h1>
         <div class="card-body">
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
@@ -12,9 +13,9 @@
                         {{ order_form.full_name | as_crispy_field }} {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
-                        {{ order_form.phone_number | as_crispy_field }} {{ order_form.country | as_crispy_field }} {{ order_form.postcode | as_crispy_field }} {{ order_form.town_or_city | as_crispy_field }} {{ order_form.street_address1 | as_crispy_field }} {{ order_form.street_address2
-                        | as_crispy_field }} {{ order_form.county | as_crispy_field }}
+                        <legend class="fieldset-label small text-black px-2 w-auto"></legend>
+                        {{ order_form.phone_number | as_crispy_field }} {{ order_form.country | as_crispy_field }} {{ order_form.postcode | as_crispy_field }} {{ order_form.town_or_city | as_crispy_field }} {{ order_form.street_address | as_crispy_field }} {{ order_form.county
+                        | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
                             {% if user.is_authenticated %}
                             <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
@@ -53,9 +54,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
+{% endblock %} {% block postloadjs %} {{ block.super }} {{ stripe_public_key|json_script:"id_stripe_public_key" }} {{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'js/stripe_elements.js' %}"></script>
 {% endblock %}
