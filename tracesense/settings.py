@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'audit',
+    'purchase',
    # 'django_forms_bootstrap',
 ]
 
