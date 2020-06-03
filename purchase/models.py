@@ -14,7 +14,6 @@ class Order(models.Model):
     postcode = models.CharField(max_length=20, null=False, blank=False)
     town_or_city = models.CharField(max_length=40, null=False, blank=False)
     street_address = models.CharField(max_length=80, null=False, blank=False)
-    county = models.CharField(max_length=80, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     grand_total = models.IntegerField( null=False, default=200)
     
