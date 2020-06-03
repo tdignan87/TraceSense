@@ -9,6 +9,8 @@ class OrderForm(forms.ModelForm):
                   'town_or_city','postcode','country',
                   'county',)
         
+        readonly_fields = ('grand_total',)
+        
         
 def __init__(self, *args, **kwargs):
         """
