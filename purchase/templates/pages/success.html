@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %} {%load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/purchase.css' %}"> {% endblock %} {% block content %}
+
+
+<section class="success-payment">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-header payment-header">Thank you for your payment</h5>
+                <p> Thank you for using Tracesense. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-7 text-right">
+                    <p>Click to go to your profile</p>
+                    <a href="{% url 'main' %}" class="btn btn-primary">Return</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
