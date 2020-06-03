@@ -6,8 +6,7 @@ class OrderForm(forms.ModelForm):
         model = Order
         fields = ('full_name','email','phone_number',
                   'street_address',
-                  'town_or_city','postcode','country',
-                  'county',)
+                  'town_or_city','postcode','country',)
         
         readonly_fields = ('grand_total',)
         
@@ -26,7 +25,6 @@ def __init__(self, *args, **kwargs):
             'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
             'street_address': 'Street Address',
-            'county': 'County',
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
