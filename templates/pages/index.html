@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %}{% block content %} {% include 'components/jumbo.html' %}
+{% extends "layouts/base.html" %} {% load static %}{% block content %} {% include 'components/jumbo.html' %}
 
 <!-- Features Section-->
 <div class="main" id="features-area">
@@ -10,7 +10,7 @@
                     <div class="flip-card-inner">
                         <h4 class="card-title ">Factory Auditing</h4>
                         <div class="flip-card-front">
-                            <img src="{{ MEDIA_URL }}tablet-engineer.jpg" alt="Bakery Tablet" style="width:300px;height:300px;">
+                            <img src="{% static '/images/tablet-engineer.jpg' %}" alt="Bakery Tablet" style="width:300px;height:300px;">
                         </div>
                         <div class="flip-card-back">
                             <i class="fa fas fa-check fa-2x"></i>
@@ -28,7 +28,7 @@
                     <div class="flip-card-inner">
                         <h4 class="card-title ">Remove Paperwork</h4>
                         <div class="flip-card-front">
-                            <img src="images/audit-paperwork.png" alt="Paperwork" style="width:300px;height:300px;">
+                            <img src="{% static '/images/audit-paperwork.png' %}" alt="Paperwork" style="width:300px;height:300px;">
                         </div>
                         <div class="flip-card-back">
                             <i class="fa fas fa-check fa-2x"></i>
@@ -45,7 +45,7 @@
                     <div class="flip-card-inner">
                         <h4 class="card-title ">Food Safety Compliant</h4>
                         <div class="flip-card-front">
-                            <img src="/static/images/internal-audit.png" alt="Paperwork" style="width:300px;height:300px;">
+                            <img src="{% static '/images/internal-audit.png' %}" alt="Paperwork" style="width:300px;height:300px;">
                         </div>
                         <div class="flip-card-back">
                             <i class="fa fas fa-check fa-2x"></i>
@@ -69,7 +69,7 @@
                 <h2 class="features-title">Paperless Auditing</h2>
                 <hr>
                 <div class="container">
-                    <img src="/static/images/ipad-audit.png" alt="Tracesense" style="width:100%;">
+                    <img src="{% static '/images/ipad-audit.jpg' %}" alt="Tracesense" style="width:100%;">
                 </div>
             </div>
             <div class="col-md-4 mb-5">

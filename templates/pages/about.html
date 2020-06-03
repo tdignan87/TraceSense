@@ -1,13 +1,13 @@
-{% extends "layouts/base.html" %}{% block content %}
+{% extends "layouts/base.html" %}{% load static %}{% block content %}
 
 
 <section class="about-section">
     <div class="container about-area">
         <div class="card mb-3">
-            <img class="card-img-top" src="/static/images/TraceSense_RGB.jpg" alt="Card image cap">
+            <img class="card-img-top" src="{% static '/images/Tracesense_RGB.jpg' %}" alt="Card image cap">
             <div class="card-body">
                 <div class="card-title about-us">
-                    <img class="card-about-us" src="/static/images/title-about-us.png" width="300" height="200" alt="">
+                    <img class="card-about-us" src="{% static '/images/title-about-us.png' %}" width="300" height="200" alt="">
                 </div>
                 <p class="card-text"><strong>Tracesense Limited was founded in 2019 with a clear purpose to create software that helps manufacturers remove paperwork from there processes whilst improving traceability.</p></strong>
                     <h5 class="card-title">What we Do</h5>
@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
-                    <img class="card-img-top" src="/static/images/developer-img.jpg" width="300" height="200" alt="">
+                    <img class="card-img-top" src="{% static '/images/developer-img.jpg' %}" width="300" height="200" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Custom Development</h4>
                         <p class="card-text">Do you need something specific developed for your needs? Speak to us today to see how we can help.</p>
@@ -44,7 +44,7 @@
             </div>
             <div class="col-md-4 mb-5 ">
                 <div class="card h-100 ">
-                    <img class="card-img-top " src="/static/images/tablet-engineer.jpg" width="300" height="200" alt="">
+                    <img class="card-img-top " src="{% static '/images/tablet-engineer.jpg' %}" width="300" height="200" alt="">
                     <div class="card-body ">
                         <h4 class="card-title ">Electronic Auditing</h4>
                         <p class="card-text ">Use our system to conduct your GMP & Compliance Audits using a tablet. No need for recording on paper then transferring to a word document to email later!</p>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-4 mb-5 ">
                 <div class="card h-100 ">
-                    <img class="card-img-top " src="/static/images/visitorSystemOne.png" width="300" height="200" alt="">
+                    <img class="card-img-top " src="{% static 'images/visitorSystemOne.png' %}" width="300" height="200" alt="">
                     <div class="card-body ">
                         <h4 class="card-title ">Visitor & Contractor Management</h4>
                         <p class="card-text ">Want a easy way to manage your approved contractors? traceVMS can help you achieve health and safety and food safety compliance. </p>
