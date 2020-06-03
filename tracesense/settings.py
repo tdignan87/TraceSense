@@ -28,7 +28,7 @@ SECRET_KEY = '&o_1ioywluj+n(64g2(+5uv!#ap@xp)oh7ah5r6zpz9#b2r#xi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://tracesense.herokuapp.com', 'http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['https://tracesense.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -172,13 +172,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-"""path for static files"""
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+
+
 
 EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = 587
