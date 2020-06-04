@@ -27,6 +27,7 @@ urlpatterns = [
     path("about/",about_page, name="about"),
     path("accounts/", include("allauth.urls")),
     path("purchase/",include("purchase.urls")),
+    path("profile/",include("profiles.urls")),
 ]
  
  
