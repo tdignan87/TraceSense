@@ -15,8 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from authentication.views import main_page, support_page, about_page
-from audit.views import config
+from tracesense.views import main_page, support_page, about_page
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -28,7 +27,6 @@ urlpatterns = [
     path("about/",about_page, name="about"),
     path("accounts/", include("allauth.urls")),
     path("purchase/",include("purchase.urls")),
-    path("config/", config),
 ]
  
  
