@@ -1,0 +1,14 @@
+#payment-card-section {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.fieldset-label {
+    text-align: center;
+}
+
+.payment-header {
+    text-align: center;
+}
