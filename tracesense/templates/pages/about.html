@@ -1,0 +1,85 @@
+{% extends "layouts/base.html" %}{% load static %}{% block content %}
+
+
+<section class="about-section">
+    <div class="container about-area">
+        <div class="card mb-3">
+            <img class="card-img-top" src="{% static '/images/Tracesense_RGB.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <div class="card-title about-us">
+                    <img class="card-about-us" src="{% static '/images/title-about-us.png' %}" width="300" height="200" alt="about-us" class="about-us-img">
+                </div>
+                <p class="card-text"><strong>Tracesense Limited was founded in 2019 with a clear purpose to create software that helps manufacturers remove paperwork from there processes whilst improving traceability.</p></strong>
+                    <h5 class="card-title">What we Do</h5>
+                    <p class="card-text">We are a niche software development company, not a reseller of other companies software and we do all our software in Scotland. Tracesense is a proud family business, run by the founder Tom Dignan alongside a dedicated team.<br></br>
+                        Tom has over 10 years in the manufacturing industry from operative to Management levels so we understand practically (not just as a developers) how best to support you.
+                        <br></br>
+                        Delivering a personal professional service is what we believe in and we focus on how important the system is in your business. We will work with you to achieve the perfect solution for your needs.<br></br> We strive for close working
+                        relationships with customers and our aim is helping them achieve the best out of systems and not promise anything that we can't deliver. <br><br><strong>If you want to deal with a company where the staff are professional who listen to your
+                        needs then please talk to us.
+                    </p></strong>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-cards">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="about-us-cards" src="{% static '/images/developer-img.jpg' %}" alt="developer">
+                    <div class="card-body">
+                        <h4 class="card-title">Custom Development</h4>
+                        <p class="card-text">Do you need something specific developed for your needs? Speak to us today to see how we can help.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Find Out More!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 ">
+                <div class="card h-100 ">
+                    <img class="about-us-cards" src="{% static '/images/tablet-engineer.jpg' %}" alt="tablet engineer">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Electronic Auditing</h4>
+                        <p class="card-text ">Use our system to conduct your GMP & Compliance Audits using a tablet. No need for recording on paper then transferring to a word document to email later!</p>
+                    </div>
+                    <div class="card-footer ">
+                        <a href="# " class="btn btn-primary ">Find Out More!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 ">
+                <div class="card h-100 ">
+                    <img class="about-us-cards" src="{% static 'images/visitorSystemOne.png' %}" alt="traceVMS image">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Visitor & Contractor Management</h4>
+                        <p class="card-text ">Want a easy way to manage your approved contractors? traceVMS can help you achieve health and safety and food safety compliance. </p>
+                    </div>
+                    <div class="card-footer ">
+                        <a href="# " class="btn btn-primary ">Find Out More!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark ">
+    <div class="container ">
+        <p class="m-0 text-center text-white ">Contact us today for more information!</p>
+        <p class="m-0 text-center text-white ">info@tracesense.co.uk</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+
+{% endblock %}
