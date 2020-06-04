@@ -24,7 +24,7 @@
     background-color: #ee6c4d;
     color: #fafafa;
     border-style: none;
-    width: 20%;
+    width: 10%;
 }
 
 .jumbotron {
@@ -294,4 +294,77 @@ section.pricing {
 .about-us-cards {
     width: 100%;
     height: 50%;
+}
+
+primaryAction {
+    background-color: #ee6c4d;
+    color: #fafafa;
+}
+
+
+/* Login page CSS styling */
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+    padding: 2rem;
+}
+
+.form-signin {
+    width: 100%;
+}
+
+
+/* Fallback for Edge
+  -------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+    .form-label-group>label {
+        display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+
+/* Fallback for IE
+  -------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .form-label-group>label {
+        display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+
+/* Styling for sidebar in profile page
+*/
+
+.sidebar-sticky {
+    padding-top: 2rem;
+    background-color: #D3D3D3;
+    color: #fafafa;
+}
+
+.sidebar {
+    padding-left: 0;
+}
+
+.title-profile {
+    padding-top: 2rem;
 }
