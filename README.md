@@ -297,8 +297,6 @@ DEPARTMENT| VarChar(255)| string| No | No |
 
 	- [JQuery](https://jquery.com) to simplify DOM manipulation.
 	- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
-	- [PyMongo](https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible.
-	- [Flask](https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages.
 	- [Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html.
 	- [Google Fonts](https://fonts.google.com/) to style the website fonts.
     - [Stripe](https://stripe.com/docs) A python library to talk to Stripe's API for card transaction payments.
@@ -311,3 +309,125 @@ DEPARTMENT| VarChar(255)| string| No | No |
 	- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) to simplify displaying data from the backend of this project smoothly and effectively in html.
 	- [Javascript](https://www.javascript.com/) to style the website fonts.
     - [Python](https://www.python.org/) to style the website fonts.
+
+
+    # Testing
+
+	1. Automatic testing was not done for this project.
+	2. HTML,CSS,Javascript and Python was validated using online vaidators. These were:
+
+	-[W3C Markup Validation Service](https://validator.w3.org/) for HTML and CSS
+	-[Esprima JS Syntax Validator](https://esprima.org/demo/validate.html) for Javascript
+	-[PEP8 Online](http://pep8online.com/) for python code
+
+	No issues were found apart from HTML validator flagging errors for the use of Jina in the HTML file.
+
+	Any features added were tested after implementation for this project. Any bugs that were identified were fixed during development. 
+
+
+
+
+
+# Deployment
+
+## How to run this project locally
+
+To run this project on your own IDE follow the instructions below:
+
+Ensure you have the following tools: 
+- An IDE such as [Visual Studio Code](https://code.visualstudio.com/)
+
+The following **must be installed** on your machine:
+- [PIP](https://pip.pypa.io/en/stable/installing/)
+- [Python 3](https://www.python.org/downloads/)
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+- [MySQL](https://www.mysql.com/) installed on your local machine.
+    - How to install MySQL on your machine [here](https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html).
+
+### Instructions
+1. Save a copy of the github repository located at https://github.com/tdignan87/TraceSense by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+```
+git clone https://github.com/tdignan87/TraceSense
+
+2. If possible open a terminal session in the unzip folder or cd to the correct location.
+
+3. A virtual environment is recommended for the Python interpreter, I used windows CMD for creating the virtual environment. Follow the instructions below:
+
+```
+Create a directory on your machine and give the folder a name for the project.
+
+```
+Go to correct directory in cmd for the folder you created using the "cd" command.
+
+```
+Enter the below into the cmd
+py -m .venv env
+```  
+_NOTE: Your Python command may differ, such as python3 or py_
+
+4. Activate the .env with the command:
+```
+.env\Scripts\activate 
+```
+_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
+
+5. If needed, Upgrade pip locally with
+```
+pip install --upgrade pip.
+
+6. Run the following command to install Django
+```
+pip install Django
+
+7. Install all required modules with the command 
+```
+pip freeze > requirements.txt.
+```
+
+6.Create your Django project buy running the command `.flaskenv`.
+
+7. Inside the .flaskenv file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `vms`, with 4 collections called `av_questions`, `contractors`, `users` and `visitors`. 
+
+8. You can now run the application with the command
+```
+python app.py
+```
+
+9. You can visit the website at `http://127.0.0.1:5000
+
+```
+## Heroku Deployment
+
+To deploy traceVMS to heroku, take the following steps:
+
+1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+
+2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
+
+3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+
+3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+
+4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+5. Confirm the linking of the heroku app to the correct GitHub repository.
+
+6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+7. Set the following config vars:
+
+| Key | Value |
+ --- | ---
+DEBUG | FALSE
+IP | 0.0.0.0
+MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`
+PORT | 5000
+SECRET_KEY | `<your_secret_key>`
+
+- To get you MONGO_URI read the MongoDB Atlas documentation [here](https://docs.atlas.mongodb.com/)
+
+8. In the heroku dashboard, click "Deploy".
+
+9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
+
+10. The site is now successfully deployed.
