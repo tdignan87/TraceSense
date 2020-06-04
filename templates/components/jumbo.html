@@ -1,4 +1,4 @@
-{% block jumbo %}
+{% block jumbo %} {% load static %}
 
 <!-- Jumbotron -->
 <div class="jumbotron">
@@ -11,7 +11,7 @@
             </div>
             </h2>
             <a class="image-logo col-md-6" href="#">
-                <img src="/static/images/audit-in-hand.png">
+                <img src="{% static '/images/audit-in-hand.png' %}">
             </a>
         </div>
     </div>
