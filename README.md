@@ -283,4 +283,31 @@ DEPARTMENTS
 DEPARTMENTID| Integer | unique | Yes | No |
 DEPARTMENT| VarChar(255)| string| No | No |
 
+# Technologies Used
 
+	### Tools
+
+	- [Visual Studio Code](https://code.visualstudio.com/) is the IDE used for developing this project. 
+	- [MySQL](https://https://www.mysql.com/) is the database for this project locally.
+    - [PostGres](https://www.postgresql.org/) is the database for this project when deployed on Heroku.
+	- [GitHub](https://github.com/) to store and share all project code remotely. 
+	- [Balsamiq](https://balsamiq.com/) used to create the wireframes for my project.
+
+    ### Libraries
+
+	- [JQuery](https://jquery.com) to simplify DOM manipulation.
+	- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
+	- [PyMongo](https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible.
+	- [Flask](https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages.
+	- [Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html.
+	- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+    - [Stripe](https://stripe.com/docs) A python library to talk to Stripe's API for card transaction payments.
+    - [psycopg2](https://www.psycopg.org/docs/) A database adaptor for PostgreSQL with Python.
+    - [Django](https://www.djangoproject.com/) Python web framework used in order to build dynamic applications.
+
+    	### Languages
+	The project uses HTML,CSS, Javascript and python programming languages.
+	- [HTML](https://en.wikipedia.org/wiki/HTML5) to construct and render pages.
+	- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) to simplify displaying data from the backend of this project smoothly and effectively in html.
+	- [Javascript](https://www.javascript.com/) to style the website fonts.
+    - [Python](https://www.python.org/) to style the website fonts.
