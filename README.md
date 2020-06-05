@@ -400,7 +400,7 @@ python app.py
 
 To deploy traceVMS to heroku, take the following steps:
 
-1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+1. Ensure your requirements file is updated `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
 
 2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
 
