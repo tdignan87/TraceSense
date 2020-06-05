@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %} {% load static %}{% block content %} {% include 'components/jumbo.html' %}
+ {% extends "layouts/base.html" %}{% load static %}{% block content %} {% include 'components/jumbo.html' %}
 
 <!-- Features Section-->
 <div class="main" id="features-area">
@@ -98,7 +98,7 @@
                             <h6 class="card-price text-center">£0<span class="period">/month</span></h6>
                             <hr>
                             <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Limited to 3 questions per Audit</li>
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></i></span>Limited to 3 questions per Audit</li>
                                 <li><span class="fa-li"><i class="fas fa-check"></i></span>View Audits</li>
                                 <li><span class="fa-li"><i class="fas fa-check"></i></span>Update With Corrective Actions</li>
                                 <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Reports</li>
@@ -134,11 +134,4 @@
 
     </section>
 
-
-
-
-
-
-
-
-    {% endblock %}
+    {% include 'components/support.html' %} {% endblock %}
