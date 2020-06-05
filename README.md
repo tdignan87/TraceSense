@@ -289,7 +289,42 @@ DEPARTMENT| VarChar(255)| string| No | No |
 ### Tools
 
 - [Visual Studio Code](https://code.visualstudio.com/) is the IDE used for developing this project.
+- [MySQL](https://https://www.mysql.com/) is the database for this project locally.
+- [PostGres](https://www.postgresql.org/) is the database for this project when deployed on Heroku.
+- [GitHub](https://github.com/) to store and share all project code remotely.
+- [Balsamiq](https://balsamiq.com/) used to create the wireframes for my project.
 
+### Libraries
+
+- [JQuery](https://jquery.com) to simplify DOM manipulation.
+- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
+- [Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+- [Stripe](https://stripe.com/docs) A python library to talk to Stripe's API for card transaction payments.
+- [psycopg2](https://www.psycopg.org/docs/) A database adaptor for PostgreSQL with Python.
+- [Django](https://www.djangoproject.com/) Python web framework used in order to build dynamic applications.
+
+### Languages
+
+The project uses HTML,CSS, Javascript and Python programming languages.
+
+- [HTML](https://en.wikipedia.org/wiki/HTML5) to construct and render pages.
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) to simplify displaying data from the backend of this project smoothly and effectively in html.
+- [Javascript](https://www.javascript.com/) to style the website fonts.
+- [Python](https://www.python.org/) to style the website fonts.
+
+# Testing
+
+1. Automatic testing was not done for this project.
+2. HTML,CSS, Javascript and Python was validated using online validators. These were:
+
+-[W3C Markup Validation Service](https://validator.w3.org/) for HTML and CSS
+-[Esprima JS Syntax Validator](https://esprima.org/demo/validate.html) for Javascript
+-[PEP8 Online](http://pep8online.com/) for python code
+
+No issues were identified apart from the HTML validator flagging erros for the Jinja in the HTML validators.
+
+Any features added were tested locally after implemntation for this project and any bugs that were identified were fixed prior to deployment to Heroku. 
 
 
  
