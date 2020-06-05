@@ -1,23 +1,18 @@
-{% extends "account/base.html" %}
+{% extends "account/base.html" %} {% load i18n %} {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %} {% block content %}
 
-{% load i18n %}
+<div class="container col-sm-9 col-md-7 col-lg-5 mx-auto" id="verify-email">
+    <div class="card">
+        <h5 class="card-header support-header">{% trans "Verify Your E-mail Address" %}</h5>
+        <div class="card-body sign-out-body">
+            {% url 'account_email' as email_url %}
 
-{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
+            <p>{% blocktrans %}This part of the site requires us to verify that you are who you claim to be. For this purpose, we require that you verify ownership of your e-mail address. {% endblocktrans %}</p>
 
-{% block content %}
-<h1>{% trans "Verify Your E-mail Address" %}</h1>
+            <p>{% blocktrans %}We have sent an e-mail to you for verification. Please click on the link inside this e-mail. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+        </div>
+        <p class="centered-p"><strong>{% blocktrans %}Please contact us if you have any trouble resetting your password.{% endblocktrans %}</p></strong><br>
+            <p class="centered-p"><strong>info@tracesense.co.uk</strong></p>
+    </div>
 
-{% url 'account_email' as email_url %}
-
-<p>{% blocktrans %}This part of the site requires us to verify that
-you are who you claim to be. For this purpose, we require that you
-verify ownership of your e-mail address. {% endblocktrans %}</p>
-
-<p>{% blocktrans %}We have sent an e-mail to you for
-verification. Please click on the link inside this e-mail. Please
-contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
-
-<p>{% blocktrans %}<strong>Note:</strong> you can still <a href="{{ email_url }}">change your e-mail address</a>.{% endblocktrans %}</p>
-
-
+</div>
 {% endblock %}
