@@ -386,10 +386,6 @@ primaryAction {
     padding-top: 2rem;
 }
 
-.sign-out-body {
-    text-align: center;
-}
-
 #password-reset-form {
     padding-top: 2rem;
 }
@@ -397,4 +393,32 @@ primaryAction {
 .side-item {
     padding-left: 1rem;
     display: block;
+}
+
+
+/* Sign up form styling
+*/
+
+#sign-up-form {
+    padding-top: 3rem;
+}
+
+#id_email {
+    width: 100%;
+}
+
+#id_email2 {
+    width: 100%;
+}
+
+#id_username {
+    width: 100%;
+}
+
+#id_password1 {
+    width: 100%;
+}
+
+#id_password2 {
+    width: 100%;
 }
