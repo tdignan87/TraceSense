@@ -213,9 +213,6 @@ User can create a maintenance request (form) which will be emailed to the mainte
 7. Quality Assurance Non Conformance Log<br>
 In the App it would be great if during production quality assurance personnel can log non conforming issues in the system. They select what product is running, and record non-conforming details for that product. 
 
-8. Dashboard <br>
-A dashboard where user can see at a first glance what actions are outstanding, how many audits completed in the last week, month, year, etc.
-
 
 # Information Architecture
 
@@ -376,6 +373,23 @@ Any features added were tested locally after implemntation for this project and 
 
 
 * **Verdict**<br>
+
+# Bugs
+
+### Bugs during Development
+
+Throughout this project there was a few bugs encountered during development. The bugs i encountered are detailed below:
+
+* **Bug**<br>
+I had a email from Heroku saying maintenance was being completed on the PostGresDB and afterwards when my application was trying to connect to the database i was getting an incorrect password error despite literally not changing anything(It worked 100% previously.).
+
+* **Fix**<br>
+Tutor support alongside myself had a look into this and it was not obvious at first. I checked the database dashboard settings on Heroku and the database uri had changed its path alongside all the database credentials. I updated the key in my application and it worked fine afterwards.
+
+* **Verdict**<br>
+Once this bug was identified and dealt with i was able to proceed with my Heroku deployment work.
+
+
 
 
 
