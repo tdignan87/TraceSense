@@ -6,6 +6,10 @@
     background-color: #0077b6;
 }
 
+#navbarTogglerDemo02 {
+    background-color: #0077b6;
+}
+
 .navbar a {
     display: block;
     color: #fafafa;
@@ -17,6 +21,10 @@
     height: 40px;
 }
 
+.login-btn-nav {
+    padding-right: 10%;
+}
+
 .profile-img {
     width: 30px;
     padding-top: 1rem;
@@ -26,7 +34,6 @@
     background-color: #ee6c4d;
     color: #fafafa;
     border-style: none;
-    width: 15%;
 }
 
 .jumbotron {
@@ -40,12 +47,16 @@
     font-size: 3.6rem;
 }
 
-.jumbo-img {
-    float: right;
+.hand-jumbo-img {
+    width: 50%;
 }
 
 body {
     padding-top: 40px;
+}
+
+.p-center {
+    text-align: center;
 }
 
 .features-title {
@@ -248,7 +259,7 @@ section.pricing {
 }
 
 .card-header {
-    background-color: #0069A8;
+    background-color: #0077b6;
     color: #fafafa;
 }
 
@@ -322,6 +333,14 @@ primaryAction {
     width: 100%;
 }
 
+#id_login {
+    width: 100%;
+}
+
+#id_password {
+    width: 100%;
+}
+
 
 /* Fallback for Edge
   -------------------------------------------------- */
@@ -365,4 +384,17 @@ primaryAction {
 
 .title-profile {
     padding-top: 2rem;
+}
+
+.sign-out-body {
+    text-align: center;
+}
+
+#password-reset-form {
+    padding-top: 2rem;
+}
+
+.side-item {
+    padding-left: 1rem;
+    display: block;
 }
