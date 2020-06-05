@@ -422,3 +422,10 @@ primaryAction {
 #id_password2 {
     width: 100%;
 }
+
+
+/* Email verification page */
+
+#verify-email {
+    padding-top: 3rem;
+}
