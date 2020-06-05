@@ -442,3 +442,25 @@ DEBUG | False
 For more detailed instructions to set up Heroku with PostGresSQL backend please check out this link below
 [Setup](https://medium.com/@hdsingh13/deploying-django-app-on-heroku-with-postgres-as-backend-b2f3194e8a43)
 ) 
+
+
+# Credits
+
+### Content
+
+The logo found on the about us page:
+ - [securly](https://www.securly.com/visitor)
+
+ The company main logo i had developed by [Tom Holmes](http://www.tom-holmes.co.uk/?LMCL=zjuU4x) an independent graphics designer.
+
+
+## Acknowledgements
+
+ - Big thanks to my mentor [Simen Daehlin](https://github.com/Eventyret) for his invaluable support as always.
+ - Thank you for the Code institute tutors for support.
+ 
+# Contact
+To contact me feel free to email me at tdignan87@gmail.com
+
+## Disclamer
+The content of this application is for educational purposes only.
