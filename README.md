@@ -440,6 +440,5 @@ DEBUG | False
 12. The site is now successfully deployed.
 
 For more detailed instructions to set up Heroku with PostGresSQL backend please check out this link below
-[Postgres Heroku](https://medium.com/@hdsingh13/deploying-django-app-on-heroku-with-postgres-as-backend-b2f3194e8a43
-
+[Setup](https://medium.com/@hdsingh13/deploying-django-app-on-heroku-with-postgres-as-backend-b2f3194e8a43)
 ) 
