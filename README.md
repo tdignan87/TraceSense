@@ -220,7 +220,8 @@ A dashboard where user can see at a first glance what actions are outstanding, h
 
 # Information Architecture
 
-[MySQL](https://www.mysql.com/) was the database choice for my project. An relational database management system was the most appropriate database choice for this project. 
+[MySQL](https://www.mysql.com/) was the database choice for my project locally. An relational database management system was the most appropriate database choice for this project.
+On deployment to Heroku i used PostGresSQL for hosting the database on Heroku. 
 
 
 Typical types of data stored in the database are
@@ -285,47 +286,13 @@ DEPARTMENT| VarChar(255)| string| No | No |
 
 # Technologies Used
 
-	### Tools
+### Tools
 
-	- [Visual Studio Code](https://code.visualstudio.com/) is the IDE used for developing this project. 
-	- [MySQL](https://https://www.mysql.com/) is the database for this project locally.
-    - [PostGres](https://www.postgresql.org/) is the database for this project when deployed on Heroku.
-	- [GitHub](https://github.com/) to store and share all project code remotely. 
-	- [Balsamiq](https://balsamiq.com/) used to create the wireframes for my project.
-
-    ### Libraries
-
-	- [JQuery](https://jquery.com) to simplify DOM manipulation.
-	- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
-	- [Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html.
-	- [Google Fonts](https://fonts.google.com/) to style the website fonts.
-    - [Stripe](https://stripe.com/docs) A python library to talk to Stripe's API for card transaction payments.
-    - [psycopg2](https://www.psycopg.org/docs/) A database adaptor for PostgreSQL with Python.
-    - [Django](https://www.djangoproject.com/) Python web framework used in order to build dynamic applications.
-
-    	### Languages
-	The project uses HTML,CSS, Javascript and python programming languages.
-	- [HTML](https://en.wikipedia.org/wiki/HTML5) to construct and render pages.
-	- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) to simplify displaying data from the backend of this project smoothly and effectively in html.
-	- [Javascript](https://www.javascript.com/) to style the website fonts.
-    - [Python](https://www.python.org/) to style the website fonts.
-
-
-    # Testing
-
-	1. Automatic testing was not done for this project.
-	2. HTML,CSS,Javascript and Python was validated using online vaidators. These were:
-
-	-[W3C Markup Validation Service](https://validator.w3.org/) for HTML and CSS
-	-[Esprima JS Syntax Validator](https://esprima.org/demo/validate.html) for Javascript
-	-[PEP8 Online](http://pep8online.com/) for python code
-
-	No issues were found apart from HTML validator flagging errors for the use of Jina in the HTML file.
-
-	Any features added were tested after implementation for this project. Any bugs that were identified were fixed during development. 
+- [Visual Studio Code](https://code.visualstudio.com/) is the IDE used for developing this project.
 
 
 
+ 
 
 
 # Deployment
@@ -398,7 +365,7 @@ python app.py
 ```
 ## Heroku Deployment
 
-To deploy traceVMS to heroku, take the following steps:
+To deploy Tracesense to heroku, take the following steps:
 
 1. Ensure your requirements file is updated `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
 
