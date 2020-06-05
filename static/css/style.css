@@ -2,7 +2,7 @@
 .main-navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    height: 5rem;
+    height: 4rem;
     background-color: #0077b6;
 }
 
@@ -10,26 +10,29 @@
     display: block;
     color: #fafafa;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
 
 .img-nav {
-    width: 70px;
-    height: 60px;
+    width: 50px;
+    height: 40px;
+}
+
+.profile-img {
+    width: 30px;
+    padding-top: 1rem;
 }
 
 .btn-login {
     background-color: #ee6c4d;
     color: #fafafa;
     border-style: none;
-    width: 10%;
+    width: 15%;
 }
 
 .jumbotron {
     background-color: #292b2c;
     color: #fafafa;
+    padding-bottom: 0;
 }
 
 .jumbo-main-title {
@@ -121,11 +124,6 @@ section.pricing {
     font-size: 1.3rem;
 }
 
-.fa-check {
-    color: #ee6c4d;
-    text-align: center;
-}
-
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -157,13 +155,12 @@ section.pricing {
 }
 
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    color: #000000;
 }
 
 .flip-card-back {
     background-color: #2980b9;
-    color: white;
+    color: #fafafa;
     transform: rotateY(180deg);
 }
 
@@ -239,6 +236,7 @@ section.pricing {
 
 .header-title {
     text-align: center;
+    background-color: #0077b6;
 }
 
 .card-header {
