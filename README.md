@@ -386,50 +386,60 @@ pip install Django
 pip freeze > requirements.txt.
 ```
 
-6.Create your Django project buy running the command `.flaskenv`.
+6.Create your Django project buy running the command `django-admin startproject myproject`. "myproject" is the name you wish to call your project so rename this to your desired project name.
 
-7. Inside the .flaskenv file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `vms`, with 4 collections called `av_questions`, `contractors`, `users` and `visitors`. 
+7. Verify your project is working by typing 'manage.py runserver' in the command line and you should see output in the command line saying the development server has started and a local IP address provided.`. 
 
-8. You can now run the application with the command
-```
-python app.py
-```
 
-9. You can visit the website at `http://127.0.0.1:5000
+8. You can visit the website at `http://127.0.0.1:8000' to see that django is successfully installed.
+
+9. To create your first app in your project, make sure you're in the same directory as manage.py and type this command. 'manage.py startapp app. "app" in this example is the name of the app but please name this as you desire. A directory will be created within your project which will contain the relevant python files.
+
+10. Open up your settings.py file and ensure to add the new app to the installed applications.
+
+11. To set up the database please follow the attached link below from the official Django documentation.
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
 ```
 ## Heroku Deployment
 
 To deploy Tracesense to heroku, take the following steps:
 
-1. Ensure your requirements file is updated `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+1. Ensure your requirements file is updated `requirements.txt` file using the terminal command `pip freeze > requirements.txt`. Ensure [gunicorn](https://gunicorn.org/) is installed into your project also and if necessary do another 'pip freeze > requirements.txt' after to refresh your latest files. Ensure you do a git push once its installed and requirements updated.
 
-2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
+2. Add 'herokuapp' to installed apps in your settings.py
 
-3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+3. Visit Heroku and create a new app.
 
-3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+4. Create a `Procfile` in VS code by manually creating it.Open your Procfile and add the follow. 'web: gunicorn djangoherokuapp.wsgi'. Change djangoherokuapp to the name of your project.
 
-4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+5. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
 
-5. Confirm the linking of the heroku app to the correct GitHub repository.
+6. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
 
-6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+7. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
 
-7. Set the following config vars:
+8. Confirm the linking of the heroku app to the correct GitHub repository.
+
+9. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+10. Set the following config vars:
 
 | Key | Value |
  --- | ---
-DEBUG | FALSE
-IP | 0.0.0.0
-MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`
-PORT | 5000
-SECRET_KEY | `<your_secret_key>`
+DATABASE_URL | Value from your variables file
+SECRET_KEY | Value from your variables file
+DEBUG | False
 
-- To get you MONGO_URI read the MongoDB Atlas documentation [here](https://docs.atlas.mongodb.com/)
+(Please note if your using Stripe then you will need to set up relevant config vars for that.)
 
-8. In the heroku dashboard, click "Deploy".
+10. In the heroku dashboard, click "Deploy".
 
-9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
+11. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 
-10. The site is now successfully deployed.
+12. The site is now successfully deployed.
+
+For more detailed instructions to set up Heroku with PostGresSQL backend please check out this link below
+[Postgres Heroku](https://medium.com/@hdsingh13/deploying-django-app-on-heroku-with-postgres-as-backend-b2f3194e8a43
+
+) 
