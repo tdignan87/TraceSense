@@ -47,8 +47,8 @@ Tracesense is my own company i created in November 2019 and decided to go with t
 6.[Bugs](#Bugs)
 
 7. [Deployment](#deployment)
-    - [Heroku Deployment](#heroku-deployment)
     - [How to run this project locally](#how-to-run-this-project-locally)
+    - [Heroku Deployment](#heroku-deployment)
 
 8. [Credits](#credits)
     - [Content](#content)
