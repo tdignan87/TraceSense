@@ -390,6 +390,13 @@ Tutor support alongside myself had a look into this and it was not obvious at fi
 Once this bug was identified and dealt with i was able to proceed with my Heroku deployment work.
 
 
+* **Bug**<br>
+"SMTP Client was not authenticated to send anonymous mail during FROM webmaster localhost"
+
+* **Fix**<br>
+
+
+* **Verdict**<br>
 
 
 
