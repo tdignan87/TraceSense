@@ -372,6 +372,10 @@ primaryAction {
 /* Styling for sidebar in profile page
 */
 
+.sidebar-nav {
+    display: none;
+}
+
 .sidebar-sticky {
     padding-top: 2rem;
     background-color: #D3D3D3;
@@ -393,6 +397,10 @@ primaryAction {
 .side-item {
     padding-left: 1rem;
     display: block;
+}
+
+#page-content-wrapper {
+    padding-top: 2rem;
 }
 
 
