@@ -84,52 +84,7 @@
         </div>
     </section>
 
-    <section class="pricing py-5" id="pricing-area">
-        <div class="container">
-            <div class="row">
-                <!-- Free Tier -->
-                <div class="col-lg-6">
-                    <div class="card mb-5 mb-lg-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
-                            <h6 class="card-price text-center">£0<span class="period">/month</span></h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fas fa-check-square"></i></i></span>Limited to 3 questions per Audit</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>View Audits</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Update With Corrective Actions</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Reports</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Software Support</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Training Material</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Software Updates</li>
-                            </ul>
-                            <a href="{% url 'account_signup' %}" class="btn btn-block btn-primary text-uppercase free-btn">Register Today</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card mb-5 mb-lg-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Dynamic</h5>
-                            <h6 class="card-price text-center">£200<span class="period">/month</span></h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Questions for your Audits</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>View Audits</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Update with Corrective Actions</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Reports</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Software Support</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Training Material</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Software Updates</li>
-                            </ul>
-                            <a href="#" class="btn btn-block btn-primary text-uppercase dynamic-btn">Sign Up Today!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+    {% include 'components/pricing.html' %}
 </div>
 
 {% include 'components/support.html' %} {% endblock %}
