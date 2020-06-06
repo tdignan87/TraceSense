@@ -24,3 +24,13 @@ $("#pricing-link").click(function() {
         scrollTop: $("#pricing-area").offset().top
     }, 1000)
 })
+
+/**
+ * Side navigation toggle.
+ */
+
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggle("sidebar-nav");
+    console.log("test click");
+});
