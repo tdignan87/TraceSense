@@ -386,6 +386,12 @@ primaryAction {
     padding-left: 0;
 }
 
+.section-head {
+    padding-top: 1rem;
+    text-align: center;
+    color: #0077b6;
+}
+
 .title-profile {
     padding-top: 2rem;
 }
@@ -394,12 +400,21 @@ primaryAction {
     padding-top: 2rem;
 }
 
+.card-img-top {
+    width: 8rem;
+    padding-right: 1rem;
+}
+
 .side-item {
     padding-left: 1rem;
     display: block;
 }
 
 #page-content-wrapper {
+    padding-top: 2rem;
+}
+
+.sidebar-heading {
     padding-top: 2rem;
 }
 
