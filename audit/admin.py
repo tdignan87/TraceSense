@@ -7,7 +7,7 @@ class GMPQuestionAdmin(admin.ModelAdmin):
     
     fields = ('question',)
     
-    list_display = ('gmp_questionid', 'created', 'question',)
+    list_display = ('gmp_questionid', 'created', 'question')
     
     
 admin.site.register(gmp_questions, GMPQuestionAdmin)
