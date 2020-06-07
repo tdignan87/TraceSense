@@ -1,4 +1,4 @@
-{% block profile-nav %} {% load static %}
+{% block profile-nav %} {% load static %} {% if user.is_authenticated %}
 <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
@@ -19,7 +19,7 @@
             <div class="section-head">
                 <p>Settings</p>
             </div>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Departments</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light" id="department-nav">Departments</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Production Areas</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Alert Management</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Create Questions & Answers</a>
@@ -27,6 +27,4 @@
 
     </div>
 
-
-
-    {% endblock %}
+    {% else %} {% endif %}{% endblock %}
