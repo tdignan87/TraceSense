@@ -452,3 +452,22 @@ primaryAction {
 #verify-email {
     padding-top: 3rem;
 }
+
+
+/* Dashboard Cards */
+
+#dashboard-body-card {
+    background-color: #0077b6;
+    color: #fafafa;
+}
+
+#oops-statement {
+    padding-top: 2rem;
+}
+
+
+/* Dashboard Page Styling */
+
+.dashboard-section {
+    width: 100%;
+}
