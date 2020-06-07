@@ -471,3 +471,7 @@ primaryAction {
 .dashboard-section {
     width: 100%;
 }
+
+.container {
+    padding-top: 2rem;
+}
