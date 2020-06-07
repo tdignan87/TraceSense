@@ -41,6 +41,10 @@ $("#menu-toggle").click(function(e) {
 
 $(window).ready(function() {
     $("#department-area").hide();
+    $("#production-area").hide();
+    $("#alert-area").hide();
+    $("#audit-area").hide();
+
 });
 /**
  * Dashboard hide and display control elements on the page.
@@ -53,4 +57,44 @@ $("#department-nav").click(function(e) {
     $('html, body').animate({
         scrollTop: $("#department-area").offset().top
     }, 1000)
+    $("#dash-items").hide();
+    $("#production-area").hide();
+    $("#alert-area").hide();
+    $("#audit-area").hide();
+});
+
+$("#production-nav").click(function(e) {
+    e.preventDefault();
+    $("#production-area").toggle("sidebar-nav");
+    $('html, body').animate({
+        scrollTop: $("#production-area").offset().top
+    }, 1000)
+    $("#dash-items").hide();
+    $("#department-area").hide();
+    $("#alert-area").hide();
+    $("#audit-area").hide();
+});
+
+$("#alert-nav").click(function(e) {
+    e.preventDefault();
+    $("#alert-area").toggle("sidebar-nav");
+    $('html, body').animate({
+        scrollTop: $("#alert-area").offset().top
+    }, 1000)
+    $("#dash-items").hide();
+    $("#department-area").hide();
+    $("#production-area").hide();
+    $("#audit-area").hide();
+});
+
+$("#questions-nav").click(function(e) {
+    e.preventDefault();
+    $("#audit-area").toggle("sidebar-nav");
+    $('html, body').animate({
+        scrollTop: $("#audit-area").offset().top
+    }, 1000)
+    $("#dash-items").hide();
+    $("#department-area").hide();
+    $("#production-area").hide();
+    $("#alert-area").hide();
 });
