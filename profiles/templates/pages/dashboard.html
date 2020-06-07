@@ -1,5 +1,4 @@
-{% extends "layouts/base.html" %}{% load static %}{% block content %} {% include 'components/profile-nav.html' %}
-
+{% extends "layouts/base.html" %}{% load static %}{% block content %} {% include 'components/profile-nav.html' %} {% if user.is_authenticated %}
 <section class="dashboard-section">
     <div class="container">
         <div id="page-content-wrapper">
@@ -11,7 +10,97 @@
         </div>
     </div>
 
-    <h1>Hey</h1>
+    <div class="container options-container">
+        <h1 class="dash-header"></h1>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Audits Completed</h5>
+                        <p class="card-text">0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Open Actions</h5>
+                        <p class="card-text">0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Closed Actions</h5>
+                        <p class="card-text">0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Closed Actions</h5>
+                        <p class="card-text">0 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="departments-section">
+        <div class="container">
+            <div class="row" id="department-area">
+                <div class="col-md-12 mb-15">
+                    <div class="card">
+                        <h5 class="card-header">Departments</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Departments Configuration</h5>
+                            <p class="card-text">Settings for configuring your area departments.</p>
+                            <div class="row">
+                                <div class="col-sm-4"><a href="" class="btn btn-success btn-block">Add New</a></div>
+                                <div class="col-sm-4"> <a href="" class="btn btn-primary btn-block">Edit</a></div>
+                                <div class="col-sm-4"><a href="" class="btn btn-danger btn-block">Delete</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    {% if user.is_authenticated %} {% for user in auth_user %}
+    <p class="signed-in">{{user.username}} User</p>
+    {% endfor %} {% else %}
+    <p class="signed-in">Not signed in check</p> {% endif %} {% else %}
+
+    <div class="container" id="oops-statement">
+        <div class="card">
+            <h5 class="card-header support-header">Oops!</h5>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <p>Please ensure you have logged into your account first.</p><br>
+                        <p>Please contact support if required.</p>
+
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
 
 </section>
 
