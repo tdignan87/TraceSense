@@ -32,5 +32,25 @@ $("#pricing-link").click(function() {
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggle("sidebar-nav");
-    console.log("test click");
+});
+
+
+/**
+ * Hide sections on form load event.
+ */
+
+$(window).ready(function() {
+    $("#department-area").hide();
+});
+/**
+ * Dashboard hide and display control elements on the page.
+ */
+
+
+$("#department-nav").click(function(e) {
+    e.preventDefault();
+    $("#department-area").toggle("sidebar-nav");
+    $('html, body').animate({
+        scrollTop: $("#department-area").offset().top
+    }, 1000)
 });
