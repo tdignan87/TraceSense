@@ -48,10 +48,10 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'audit',
     'purchase',
     'profiles',
     'tracesense',
+    'audit',
     
    
    # Other
