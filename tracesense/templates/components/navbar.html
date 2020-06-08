@@ -28,9 +28,12 @@
     </div>
     <div class="user-status">
         {% if user.is_authenticated %} {% for user in auth_user %}
-        <p class="signed-in">{{user.username}}</p>
+        <p class="signed-in">{{form.username}}</p>
         {% endfor %} {% else %} {% endif %}
-
+        <a class="navbar-brand" href="{% url 'main' %}">
+            <img src="{% static '/images/profile.png' %}" class="navbar-img-profile">
+            <p>Click to Log in!</p>
+        </a>
     </div>
 </nav>
 {% endblock %}
