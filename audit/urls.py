@@ -5,4 +5,3 @@ urlpatterns = [
     path('new/',new_department,name="new_department"),
     
 ]
-
