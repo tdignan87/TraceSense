@@ -1,7 +1,15 @@
 from django import forms
-from .models import gmp_question
+from .models import gmp_questions, department
 
 class GMPQuestions(forms.ModelForm):
     class Meta:
-        model = gmp_question
-        fields = ('question','deleted',) 
+        model = gmp_questions
+        fields = ('question',) 
+        
+        
+class NewDepartment(forms.ModelForm):
+    class Meta:
+        model = department
+        fields = ('department',)
+        readonly_fields = ('user',)
+    
