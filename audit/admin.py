@@ -3,7 +3,7 @@ from .models import gmp_questions, area, department
 
 class GMPQuestionAdmin(admin.ModelAdmin):
     
-    readonly_fields = ('gmp_questionid','created',)
+    readonly_fields = ('gmp_questionid','created','user_id',)
     
     fields = ('question',)
     
@@ -19,16 +19,16 @@ class SiteAreas(admin.ModelAdmin):
     
     fields = ('code','name','created_by',)
     
-    list_display = ('id', 'code','name', 'created_by',)
+    list_display = ('id', 'code','name',)
 
 admin.site.register(area, SiteAreas)
 
 class Departments(admin.ModelAdmin):
     
-    readonly_fields = ('department_id','created',)
+    readonly_fields = ('department_id','created','user')
     
-    fields = ('department','created_by',)
+    fields = ('department',)
     
-    list_display = ('department_id', 'created','department', 'created_by',)
+    list_display = ('department_id', 'created','department',)
     
 admin.site.register(department,Departments)
