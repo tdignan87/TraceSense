@@ -59,24 +59,7 @@
     {% if user.is_authenticated %} {% for user in auth_user %}
     <p class="signed-in">{{user.username}} User</p>
     {% endfor %} {% else %}
-    <p class="signed-in">Not signed in check</p> {% endif %} {% else %}
-
-    <div class="container" id="oops-statement">
-        <div class="card">
-            <h5 class="card-header support-header">Oops!</h5>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <p>Please ensure you have logged into your account first.</p><br>
-                        <p>Please contact support if required.</p>
-
-                </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {% endif %}
+    <p class="signed-in">Not signed in check</p> {% endif %} {% else %} {% include 'components/oops.html' %} {% endif %}
 
 </section>
 
