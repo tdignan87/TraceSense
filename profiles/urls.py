@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from profiles.views import profile_page
 
 urlpatterns = [
