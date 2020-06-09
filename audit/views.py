@@ -1,30 +1,44 @@
 from django.shortcuts import render,redirect
-from .forms import NewDepartment
-from .models import department
+from .forms import AreaForm
+from .models import areas
 
-
-def new_department(request):
-    """ A view to return to the main home page """
-    form = NewDepartment()
+def create_area(request):
+    Areaform = AreaForm()
     if request.method == "POST":
-        form = NewDepartment(request.POST)
-    if form.is_valid():
-         new_department = form.save(commit=False)
-         new_department.user_id = request.user.id
-         new_department.save()
-         return redirect("/profile/")
-    context = {'form':form}
-    return render(request,"pages/new_department.html",context)
+        form = AreaForm(request.POST)
+        if form.is_valid():
+            createArea = form.save(commit=False)
+            createArea.user_id = request.user.id
+            form.save()
+            return redirect("/profile")
+    context = {'Areaform':AreaForm}
+    return render(request,"pages/areas.html",context)
+
+def area_list(request):
+    area = areas.objects.filter(user_id=request.user.id)
+    return render(request,"pages/view_areas.html",{"area":area})
+
+def update_area(request, pk):
+    
+    area = areas.objects.get(id=pk)
+    form = AreaForm(instance=area)
+    
+    if request.method == "POST":
+        form = AreaForm(request.POST, instance=area)
+        if form.is_valid():
+            form.save()
+            return redirect("/profile")
+    context = {'Areaform':AreaForm}
+    return render(request,"pages/areas.html",context)
     
     
-
-
-def department_list(request):
     
-    departments = department.objects.filter(user_id=request.user.id)
-    return render(request,"pages/view_departments.html", {"departments":departments})
+    context = {'Areaform':AreaForm}
+    return render(request,"pages/areas.html",context)
+    
 
-def update_department(request, pk):
-    form = NewDepartment()
-    context = {'form':form}
-    return render(request,"pages/new_department.html",context)
+ 
+    
+        
+            
+    
