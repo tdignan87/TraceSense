@@ -124,16 +124,16 @@ WSGI_APPLICATION = 'tracesense.wsgi.application'
 
 
  #Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-#if 'DATABASE_URL' in os.environ:
-  #  DATABASES = {
-   #     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-   # }
-#else:
-DATABASES = {
+ #https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+if 'DATABASE_URL' in os.environ:
+     DATABASES = {
+         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+     }
+else:
+    DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'OPTIONS': {
+           'ENGINE': 'django.db.backends.mysql',
+           'OPTIONS': {
                 'read_default_file': 'env/db/db.cnf',
             }
         }
