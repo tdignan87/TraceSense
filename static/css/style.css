@@ -15,6 +15,10 @@
     width: 2.5rem;
 }
 
+.login-text {
+    font-size: 0.8rem;
+}
+
 .navbar a {
     display: block;
     color: #fafafa;
@@ -478,7 +482,7 @@ primaryAction {
 }
 
 .container {
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 
