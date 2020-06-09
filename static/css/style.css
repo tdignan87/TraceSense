@@ -491,3 +491,7 @@ primaryAction {
 #id_department {
     width: 100%;
 }
+
+.options-menu {
+    float: right;
+}
