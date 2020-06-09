@@ -7,7 +7,7 @@
                 <p class="p-center">Select department to edit</p>
                 <div class="list-group">
                     {% for dep in departments %}
-                    <a href="#" class="list-group-item list-group-item-action">{{dep.department}}</a> {% endfor %}
+                    <a href="{% url 'update_department' %}" class="list-group-item list-group-item-action">{{dep.department}}</a> {% endfor %}
                 </div>
 
             </div>
