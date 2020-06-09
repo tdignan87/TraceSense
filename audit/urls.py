@@ -1,8 +1,8 @@
 from django.urls import path
-from audit.views import new_department,update_department,department_list
+from audit.views import create_area,area_list,update_area
 
 urlpatterns = [
-    path('new/',new_department,name="new_department"),
-    path('update/<str:pk>',update_department,name="update_department"),
-    path('edit/',department_list,name="department_list"),
+    path("area/",create_area,name="create_area"),
+    path("area_list/",area_list,name="area_list"),
+    path("update_area/<str:pk>",update_area,name="update_area"),
 ]
