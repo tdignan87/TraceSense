@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, get_object_or_404
 from .forms import AreaForm
 from .models import areas
 
@@ -22,7 +22,6 @@ def update_area(request, pk):
     
     area = areas.objects.get(id=pk)
     form = AreaForm(instance=area)
-    
     if request.method == "POST":
         form = AreaForm(request.POST, instance=area)
         if form.is_valid():
@@ -30,15 +29,22 @@ def update_area(request, pk):
             return redirect("/profile")
     context = {'Areaform':AreaForm}
     return render(request,"pages/areas.html",context)
+
+def delete_area(request, pk):
+    area = areas.objects.get(id=pk)
+    if request.method == "POST":
+        area.delete()
+        return redirect("/profile")
     
-    
-    
-    context = {'Areaform':AreaForm}
-    return render(request,"pages/areas.html",context)
+    context = {'name':area,
+               'code':area,}
+    return render(request, 'components/delete.html',context)
+
+
+
     
 
- 
-    
+  
         
             
     
