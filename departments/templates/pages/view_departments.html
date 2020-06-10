@@ -1,18 +1,23 @@
 {% extends "layouts/base.html" %}{% load static %}{% block content %} {% if user.is_authenticated %}
 <section class="edit-departments">
-    <div class="container" id="edit-departments-list">
+    <div class="container" id="edit-department-list">
         <div class="card">
-            <h5 class="card-header support-header">Edit Departments</h5>
+            <h5 class="card-header support-header">Departments</h5>
             <div class="card-body">
-                <p class="p-center">Select department to edit</p>
                 <div class="list-group">
-                    {% for dep in departments %}
-                    <a href="" class="list-group-item list-group-item-action">{{dep.department}}</a> {% endfor %}
+                    {% for d in department %}
+                    <h5 class="mb-1">Departments</h5>
+                    <li class="list-group-item">{{d.department}}
+                        <div class="options-menu">
+                            <a class="btn btn-primary btn-sm" href="{% url 'update_department' d.department_id %}">Edit</a>
+                            <a class="btn btn-danger btn-sm" href="">Delete</a>
+
+                        </div>
+                    </li>{% endfor %}
                 </div>
 
             </div>
         </div>
     </div>
 </section>
-
 {% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}
