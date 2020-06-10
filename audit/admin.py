@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import gmp_questions, areas
+from .models import gmp_questions
 
 class GMPQuestionAdmin(admin.ModelAdmin):
     
@@ -11,14 +11,3 @@ class GMPQuestionAdmin(admin.ModelAdmin):
     
     
 admin.site.register(gmp_questions, GMPQuestionAdmin)
-
-
-class SiteAreas(admin.ModelAdmin):
-    
-    readonly_fields = ('id','created',)
-    
-    fields = ('code','name','created_by',)
-    
-    list_display = ('id', 'code','name',)
-
-admin.site.register(areas, SiteAreas)
