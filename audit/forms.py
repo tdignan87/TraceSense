@@ -1,17 +1,12 @@
 from django import forms
-from .models import gmp_questions, department, areas
+from .models import gmp_questions, areas
 
 class GMPQuestions(forms.ModelForm):
     class Meta:
         model = gmp_questions
         fields = ('question',) 
         
-        
-class NewDepartment(forms.ModelForm):
-    class Meta:
-        model = department
-        fields = ('department',)
-        
+            
 class AreaForm(forms.ModelForm):
     class Meta:
         model = areas
