@@ -33,4 +33,14 @@ def update_department(request,pk):
     context = {'form':form}
     return render(request,"pages/new_department.html",context)
 
+def delete_department(request,pk):
+    """ function for deleting department from database. """
+    dep = Department.objects.get(department_id=pk)
+    if request.method == "POST":
+        dep.delete()
+        return redirect("/profile")
+    
+    context={'department':dep}
+    return render(request,"pages/delete_department.html",context)
+
 
