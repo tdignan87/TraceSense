@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import department
+from .models import Department
 
 # Register your models here.
 
@@ -11,4 +11,4 @@ class Departments(admin.ModelAdmin):
     
     list_display = ('department_id', 'created','department',)
     
-admin.site.register(department,Departments)
+admin.site.register(Department,Departments)
