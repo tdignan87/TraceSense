@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'audit',
     'departments',
     'areas',
+    'questions',
     
    
    # Other
