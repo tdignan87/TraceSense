@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'profiles',
     'tracesense',
     'audit',
+    'departments',
+    'areas',
     
    
    # Other
