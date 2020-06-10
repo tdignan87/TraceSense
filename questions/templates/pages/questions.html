@@ -1,0 +1,20 @@
+{% block questions %} {% load static %}
+<div class="container">
+    <div class="row" id="audit-area">
+        <div class="col-md-12 mb-15">
+            <div class="card">
+                <h5 class="card-header">Create New Questions</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Create New Questions & Answers</h5>
+                    <p class="card-text">Create your audit questions here.</p>
+                    <div class="row">
+                        <div class="col-sm-6"><a href="{% url 'create_question' %}" class="btn btn-success btn-block">Add Question</a></div>
+                        <div class="col-sm-6"> <a href="" class="btn btn-primary btn-block">Edit Questions</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

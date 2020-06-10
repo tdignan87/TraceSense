@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}{% load static %}{% block content %} {% if user.is_authenticated %}
+
+<section class="new-dept">
+    <div class="container" id="new-question">
+        <div class="card">
+            <h5 class="card-header support-header">Questions</h5>
+            <div class="card-body">
+                <p>Please enter your new audit question below.</p>
+                <form action="" method="POST"> {% csrf_token %} {{form}}
+                    <input type="submit" name="Submit" class="btn btn-success">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}
