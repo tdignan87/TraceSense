@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %}{% load static %}{% block content %}
+{% extends "layouts/base.html" %}{% load static %}{% block content %} {% if user.is_authenticated %}
 
 
 <div class="container" id="delete-confirmation">
@@ -18,4 +18,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
+{% else %} {% include 'components/oops.html' %} {% endif %}{% endblock %}
