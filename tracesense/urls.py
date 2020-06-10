@@ -28,7 +28,7 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("purchase/",include("purchase.urls")),
     path("profile/",include("profiles.urls")),
-    path("areas/",include("audit.urls")),
+    path("areas/",include("areas.urls")),
      path("departments/",include("departments.urls")),
 ]
  
