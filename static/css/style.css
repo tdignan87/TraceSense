@@ -495,3 +495,11 @@ primaryAction {
 .options-menu {
     float: right;
 }
+
+.delete-btn-confirm {
+    text-align: center;
+}
+
+.delete-cancel-btn {
+    text-align: center;
+}
