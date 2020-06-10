@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}{% load static %}{% block content %} {% if user.is_authenticated %}
+
+<section class="new-dept">
+    <div class="container" id="new-area">
+        <div class="card">
+            <h5 class="card-header support-header">Area Menu</h5>
+            <div class="card-body">
+                <form action="" method="POST"> {% csrf_token %} {{form}}
+                    <input type="submit" name="Submit" class="btn btn-success">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}

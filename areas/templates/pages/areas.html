@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}{% load static %}{% block content %} {% if user.is_authenticated %}
+<section class="new-dept">
+    <div class="container" id="production-area">
+        <div class="card">
+            <h5 class="card-header">Production Areas</h5>
+            <div class="card-body">
+                <h5 class="card-title">Area Configuration</h5>
+                <p class="card-text">Settings for configuring your production areas.</p>
+                <div class="row">
+                    <div class="col-sm-6"><a href="{% url 'create_area' %}" class="btn btn-success btn-block">Add New</a></div>
+                    <div class="col-sm-6"> <a href="{% url 'area_list' %}" class="btn btn-primary btn-block">Edit & View</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}
