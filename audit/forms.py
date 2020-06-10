@@ -1,5 +1,5 @@
 from django import forms
-from .models import gmp_questions, areas
+from .models import gmp_questions
 
 class GMPQuestions(forms.ModelForm):
     class Meta:
@@ -7,8 +7,5 @@ class GMPQuestions(forms.ModelForm):
         fields = ('question',) 
         
             
-class AreaForm(forms.ModelForm):
-    class Meta:
-        model = areas
-        fields = ('code','name',)
+
         
