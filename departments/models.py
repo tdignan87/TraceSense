@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class department(models.Model):
+class Department(models.Model):
     user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     department_id = models.AutoField(primary_key=True)
     department = models.CharField(max_length=50,null=False,editable=True)
