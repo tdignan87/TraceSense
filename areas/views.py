@@ -17,7 +17,7 @@ def create_area(request):
 
 def area_list(request):
     area = Areas.objects.filter(user_id=request.user.id)
-    return render(request,"pages/view_areas.html",{"area":area})
+    return render(request,"pages/view_areas.html",{"areas":area})
 
 def update_area(request, pk):
     area = Areas.objects.get(id=pk)
@@ -38,4 +38,4 @@ def delete_area(request, pk):
     
     context = {'name':area,
                'code':area,}
-    return render(request, 'components/delete.html',context)
+    return render(request, 'pages/delete_area.html',context)
