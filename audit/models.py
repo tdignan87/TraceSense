@@ -3,6 +3,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
+
+def __str__(self):
+    return self.name
+
+
 class gmp_questions(models.Model):
     
      user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
@@ -16,6 +21,9 @@ class areas(models.Model):
     code = models.CharField(max_length=5,null=False,editable=True)
     name = models.CharField(max_length=255,null=False,editable=True)
     created = models.DateTimeField(auto_now_add=True, null=False, editable=False)
+    
+    def __str__(self):
+        return self.name
     
     
 class department(models.Model):
