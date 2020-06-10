@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from .forms import NewDepartment
-from .models import department
+from .models import Department
 
 def create_department(request):
     """create new department into the database."""
@@ -12,5 +12,25 @@ def create_department(request):
             createDepartment.user_id = request.user.id
             form.save()
             return redirect("/profile")
-    context = {'new_department':NewDepartment}
+    context = {'form':NewDepartment}
     return render(request,"pages/new_department.html",context)
+
+
+def department_list(request):
+    """ function for rendering department list from model"""
+    dep = Department.objects.filter(user_id=request.user.id)
+    return render(request,"pages/view_departments.html",{"department":dep})
+
+def update_department(request,pk):
+    """ function for updating the department values"""
+    dep = Department.objects.get(department_id=pk)
+    form = NewDepartment(instance=dep)
+    if request.method =="POST":
+        dep = NewDepartment(request.POST, instance=dep)
+        if form.is_valid():
+            form.save()
+            return redirect("/profile")
+    context = {'form':form}
+    return render(request,"pages/new_department.html",context)
+
+
