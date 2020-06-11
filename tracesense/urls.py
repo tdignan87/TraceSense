@@ -31,6 +31,7 @@ urlpatterns = [
     path("areas/",include("areas.urls")),
     path("departments/",include("departments.urls")),
     path("questions/",include("questions.urls")),
+    path("audits/",include("audit.urls")),
 ]
  
  
