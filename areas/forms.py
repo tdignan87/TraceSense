@@ -1,9 +1,9 @@
 from django import forms
-from .models import Areas
+from .models import Locations
 
             
 class AreaForm(forms.ModelForm):
     class Meta:
-        model = Areas
+        model = Locations
         fields = ('code','name',)
         
