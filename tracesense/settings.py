@@ -108,6 +108,7 @@ AUTHENTICATION_BACKENDS = (
     
 )
 
+# Site is set to two which is for the tracesense emails notification domain. check DB for further information.
 SITE_ID = 2
 
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
