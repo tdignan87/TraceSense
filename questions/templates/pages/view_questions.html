@@ -14,9 +14,12 @@
 
                         </div>
                     </li>{% endfor %}
+
                 </div>
 
             </div>
+            <a href="{% url 'create_question' %}" class="btn btn-primary">Add New</a>
+            <div class="col-sm-6"> <a href="{% url 'dashboard' %}" class="btn btn-danger">Cancel</a></div>
         </div>
     </div>
 </section>
