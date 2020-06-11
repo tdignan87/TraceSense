@@ -7,7 +7,7 @@
         <div class="card-body">
             <div class="form-group">
                 <p>Are you sure you want to delete "{{name}}" ?</p><br>
-                <form action="{% url 'delete_area' name.id %}" method="POST" class="delete-btn-confirm"> {% csrf_token %}
+                <form action="{% url 'delete_area' name.location_id %}" method="POST" class="delete-btn-confirm"> {% csrf_token %}
                     <input type="submit" name="Confirm" class="btn btn-danger">
                 </form>
 
