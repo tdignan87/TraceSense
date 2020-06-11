@@ -11,7 +11,7 @@ def create_department(request):
             createDepartment = form.save(commit=False)
             createDepartment.user_id = request.user.id
             form.save()
-            return redirect("/profile")
+            return redirect(department_list)
     context = {'form':NewDepartment}
     return render(request,"pages/new_department.html",context)
 
@@ -29,7 +29,7 @@ def update_department(request,pk):
         dep = NewDepartment(request.POST, instance=dep)
         if form.is_valid():
             form.save()
-            return redirect("/profile")
+            return redirect(department_list)
     context = {'form':form}
     return render(request,"pages/new_department.html",context)
 
@@ -38,7 +38,7 @@ def delete_department(request,pk):
     dep = Department.objects.get(department_id=pk)
     if request.method == "POST":
         dep.delete()
-        return redirect("/profile")
+        return redirect(department_list)
     
     context={'department':dep}
     return render(request,"pages/delete_department.html",context)
