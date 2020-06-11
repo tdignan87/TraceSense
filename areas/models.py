@@ -4,8 +4,9 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 
-class Areas(models.Model):
+class Locations(models.Model):
     
+    location_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     code = models.CharField(max_length=5,null=False,editable=True)
     name = models.CharField(max_length=255,null=False,editable=True)
