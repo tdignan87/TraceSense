@@ -3,11 +3,6 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-
-def __str__(self):
-    return self.name
-
-
 class Gmp_questions(models.Model):
     
      user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
@@ -16,14 +11,3 @@ class Gmp_questions(models.Model):
      created = models.DateTimeField(auto_now_add=True, null=False, editable=False)
      def __str__(self):
             return self.question
-     
-     
-    
-class Gmp_answers(models.Model):
-    
-    user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
-    gmp_id = models.AutoField(primary_key=True)
-    gmp_questionid = Gmp_questions.gmp_questionid
-    compliant = models.SmallIntegerField(null=True,editable=True)
-    fail = models.SmallIntegerField(null=True,editable=True)
-    freetext = models.CharField(max_length=255,null=True,editable=True)
