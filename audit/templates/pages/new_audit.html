@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}{% load static %}{% block content %} {% if user.is_authenticated %}
+
+<section class="audit-form">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header support-header">New Audit</h5>
+            <div class="card-body">
+                <div class="list-group">
+
+                    <h5 class="mb-1">Question</h5>
+                    <li class="list-group-item">How many people current live in the USA?
+                        <div class="options-menu">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  <strong>Compliant</strong>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                  <strong>Not Compliant</strong>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Freetext:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                        </div>
+                    </form>
+                    <div class="row">
+                        <p>Area:</p>
+                        <select class="form-control col-sm-6">
+                        <option>Prep</option>
+                        <option>Mixing</option>
+                      </select>
+                        <p>Responsible:</p>
+                        <select class="form-control col-sm-3">
+                      <option>Tom Dignan</option>
+                      <option>Ian Donnelly</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}
