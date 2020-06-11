@@ -508,3 +508,7 @@ primaryAction {
 #id_question {
     width: 100%;
 }
+
+#reset-done-card {
+    padding-top: 3rem;
+}
