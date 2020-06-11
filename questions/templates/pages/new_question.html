@@ -7,9 +7,12 @@
             <div class="card-body">
                 <p>Please enter your new audit question below.</p>
                 <form action="" method="POST"> {% csrf_token %} {{form}}
-                    <input type="submit" name="Submit" class="btn btn-success">
+                    <div class="submit-btn">
+                        <input type="submit" name="Submit" class="btn btn-success">
+                    </div>
                 </form>
             </div>
+            <div class="col-sm-6"> <a href="{% url 'dashboard' %}" class="btn btn-danger">Cancel</a></div>
         </div>
     </div>
 </section>
