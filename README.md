@@ -391,13 +391,13 @@ Once this bug was identified and dealt with i was able to proceed with my Heroku
 
 
 * **Bug**<br>
-"SMTP Client was not authenticated to send anonymous mail during FROM webmaster localhost"
+"SMTP Client authentication is not authorised."
 
 * **Fix**<br>
-
+I used office 365 for my SMTP authentication and tried to allow less secure apps permission through powershell although i couldn't get the commands to work. I created an domain with ionos and registered an email address. I then changed the SMTP settings and tested and was now OK.
 
 * **Verdict**<br>
-
+Issues with office365 authentication although works fine with ionos SMTP authentication. Tested and now OK.
 
 
 # Deployment
