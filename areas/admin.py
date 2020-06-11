@@ -1,12 +1,12 @@
 from django.contrib import admin
-from .models import Areas
+from .models import Locations
 
 class SiteAreas(admin.ModelAdmin):
     
-    readonly_fields = ('id','created',)
+    readonly_fields = ('location_id','created',)
     
     fields = ('code','name','created_by',)
     
-    list_display = ('id', 'code','name',)
+    list_display = ('location_id', 'code','name',)
 
-admin.site.register(Areas, SiteAreas)
+admin.site.register(Locations, SiteAreas)
