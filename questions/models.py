@@ -14,6 +14,9 @@ class Gmp_questions(models.Model):
      gmp_questionid = models.AutoField(primary_key=True)
      question = models.CharField(max_length=255, null=False, editable=True)
      created = models.DateTimeField(auto_now_add=True, null=False, editable=False)
+     def __str__(self):
+            return self.question
+     
      
     
 class Gmp_answers(models.Model):
