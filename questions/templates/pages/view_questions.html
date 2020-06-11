@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}{% load static %}{% block content %} {% if user.is_authenticated %}
+<section class="edit-areas">
+    <div class="container" id="edit-area-list">
+        <div class="card">
+            <h5 class="card-header support-header">GMP Questions</h5>
+            <div class="card-body">
+                <div class="list-group">
+                    {% for q in question %}
+                    <h5 class="mb-1">Question</h5>
+                    <li class="list-group-item">{{q.question}}
+                        <div class="options-menu">
+                            <a class="btn btn-primary btn-sm" href="{% url 'update_question' q.gmp_questionid %}">Edit</a>
+                            <a class="btn btn-danger btn-sm" href="{% url 'delete_question' q.gmp_questionid %}">Delete</a>
+
+                        </div>
+                    </li>{% endfor %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}
