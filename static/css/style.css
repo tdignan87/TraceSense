@@ -504,3 +504,7 @@ primaryAction {
 .delete-cancel-btn {
     text-align: center;
 }
+
+#id_question {
+    width: 100%;
+}
