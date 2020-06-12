@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_mysql',
     'authentication',
-    'send',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -55,8 +54,7 @@ INSTALLED_APPS = [
     'departments',
     'areas',
     'questions',
-    
-   
+    'send',
    # Other
    'crispy_forms',
    'storages',
