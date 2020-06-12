@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import dj_database_url
 from profiles.views import profile_page
 if os.path.exists("env.py"):
     import env
