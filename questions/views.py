@@ -6,6 +6,7 @@ from .models import Gmp_questions
 def create_question(request):
     """ Function for creating a new question"""
     questions_form = GMPQuestions()
+    form_class = GMPQuestions()
     if request.method == "POST":
         form = GMPQuestions(request.POST)
         if form.is_valid():
