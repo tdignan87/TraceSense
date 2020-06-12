@@ -12,12 +12,6 @@ $("#learn-more-btn").click(function() {
 
 })
 
-$("#support-link").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#support-section").offset().top
-    }, 1000);
-
-})
 
 $("#pricing-link").click(function() {
     $('html, body').animate({
