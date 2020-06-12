@@ -6,6 +6,9 @@ class GMPQuestions(forms.ModelForm):
         model = Gmp_questions
         fields = ('question',) 
         
+        widgets = {
+            'question': forms.TextInput(attrs={"class": "form-control"})
+        }
             
 
         
