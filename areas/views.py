@@ -5,6 +5,7 @@ from .models import Locations
 def create_area(request):
     """ Function for creating a new area in the database."""
     Areaform = AreaForm()
+    form_class = AreaForm
     if request.method == "POST":
         form = AreaForm(request.POST)
         if form.is_valid():
