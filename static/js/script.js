@@ -44,8 +44,10 @@ $(window).ready(function() {
     $("#production-area").hide();
     $("#alert-area").hide();
     $("#audit-area").hide();
-
+    $("#freetext-area").hide();
 });
+
+
 /**
  * Dashboard hide and display control elements on the page.
  */
@@ -62,6 +64,15 @@ $("#department-nav").click(function(e) {
     $("#alert-area").hide();
     $("#audit-area").hide();
 });
+
+$("#commentCheckbox").click(function() {
+    if ($("#commentCheckbox").prop('checked')) {
+        $("#freetext-area").show();
+    } else {
+        $("#freetext-area").hide();
+    }
+})
+
 
 $("#production-nav").click(function(e) {
     e.preventDefault();
