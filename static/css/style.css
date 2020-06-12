@@ -512,3 +512,20 @@ primaryAction {
 #reset-done-card {
     padding-top: 3rem;
 }
+
+#area-audit {
+    padding-left: 1rem;
+}
+
+.p-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#oops-statement {
+    padding-top: 4rem;
+}
+
+.cancel-btn {
+    padding-top: 2rem;
+}
