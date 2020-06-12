@@ -6,14 +6,16 @@
             <h5 class="card-header support-header">Questions</h5>
             <div class="card-body">
                 <p>Please enter your new audit question below.</p>
+                <div class="form-group"></div>
                 <form action="" method="POST"> {% csrf_token %} {{form}}
                     <div class="submit-btn">
                         <input type="submit" name="Submit" class="btn btn-success">
                     </div>
                 </form>
             </div>
-            <div class="col-sm-6"> <a href="{% url 'dashboard' %}" class="btn btn-danger">Cancel</a></div>
         </div>
+        <div class="col-sm-6"> <a href="{% url 'dashboard' %}" class="btn btn-danger">Cancel</a></div>
+    </div>
     </div>
 </section>
 {% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}

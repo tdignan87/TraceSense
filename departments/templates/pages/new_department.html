@@ -5,9 +5,11 @@
         <div class="card">
             <h5 class="card-header support-header">Departments Menu</h5>
             <div class="card-body">
-                <form action="" method="POST"> {% csrf_token %} {{form}}
-                    <input type="submit" name="Submit" class="btn btn-success">
-                </form>
+                <div class="form-group">
+                    <form action="" method="POST"> {% csrf_token %} {{form}} <br>
+                        <input type="submit" name="Submit" class="btn btn-success">
+                    </form>
+                </div>
             </div>
             <div class="col-sm-6"> <a href="{% url 'dashboard' %}" class="btn btn-danger">Cancel</a></div>
         </div>
