@@ -5,6 +5,7 @@ from .models import Department
 def create_department(request):
     """create new department into the database."""
     new_department = NewDepartment()
+    form_class = NewDepartment()
     if request.method == "POST":
         form = NewDepartment(request.POST)
         if form.is_valid():
