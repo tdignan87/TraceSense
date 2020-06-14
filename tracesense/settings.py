@@ -132,7 +132,7 @@ if 'DATABASE_URL' in os.environ:
          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
      }
 else:
-    DATABASES = {
+ DATABASES = {
         'default': {
            'ENGINE': 'django.db.backends.mysql',
            'OPTIONS': {
@@ -208,7 +208,7 @@ if 'USE_AWS' in os.environ:
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.ionos.co.uk'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get("EMAIL_USER")
