@@ -16,7 +16,7 @@ def send_form(request):
     return render(request,"pages/contact-form.html",context)
 
 def confirm_mail(request):
-    """ try and send email - if fails return error page"""
+    """ try and send email - if fails return error page. Automatic email to company, who then can follow up enquiry."""
     try:
         form = ContactUsForm(request.POST)
         if form.is_valid():
@@ -26,9 +26,9 @@ def confirm_mail(request):
            
         send_mail(
         'Contact Form Enquiry',
-        'Test Email',
-        'tracesense@tracesense.info',
-        ['tom.dignan@tracesense.co.uk'],
+        'A new enquiry is in the system. Please check the system to review.',
+        EMAIL_HOST_USER,
+        ['tdignan87@gmail.com'],
         fail_silently=False,
         )
         return render(request,"pages/confirmation.html")
