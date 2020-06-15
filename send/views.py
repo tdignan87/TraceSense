@@ -28,7 +28,7 @@ def confirm_mail(request):
         'Contact Form Enquiry',
         'A new enquiry is in the system. Please check the system to review.',
         EMAIL_HOST_USER,
-        ['tdignan87@gmail.com'],
+        ['tom.dignan@tracesense.co.uk'],
         fail_silently=False,
         )
         return render(request,"pages/confirmation.html")
