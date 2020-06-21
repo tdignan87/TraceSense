@@ -6,7 +6,7 @@
             <div class="card-body">
                 <div class="list-group">
                     {% for d in department %}
-                    <h5 class="mb-1">Departments</h5>
+                    <h5 class="mb-1">Department</h5>
                     <li class="list-group-item">{{d.department}}
                         <div class="options-menu">
                             <a class="btn btn-primary btn-sm" href="{% url 'update_department' d.department_id %}">Edit</a>
