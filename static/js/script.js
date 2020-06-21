@@ -38,7 +38,8 @@ $(window).ready(function() {
     $("#production-area").hide();
     $("#alert-area").hide();
     $("#audit-area").hide();
-    $("#freetext-area").hide();
+    $("#id_freetext").hide();
+    $("#commentCheckbox").prop("checked", false);
 });
 
 
@@ -61,9 +62,9 @@ $("#department-nav").click(function(e) {
 
 $("#commentCheckbox").click(function() {
     if ($("#commentCheckbox").prop('checked')) {
-        $("#freetext-area").show();
+        $("#id_freetext").show();
     } else {
-        $("#freetext-area").hide();
+        $("#id_freetext").hide();
     }
 })
 
