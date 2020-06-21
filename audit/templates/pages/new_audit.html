@@ -4,60 +4,47 @@
     <div class="container">
         <div class="card">
             <h5 class="card-header support-header">New Audit</h5>
-            <div class="card-body">
+            <div class="card-body" id="audit-body-form">
                 <div class="list-group">
-
-                    <h5 class="mb-1">Question</h5>
-                    <li class="list-group-item">How many people current live in the USA?
-                        <div class="options-menu">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                  <strong>Compliant</strong>
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                <label class="form-check-label" for="exampleRadios2">
-                                  <strong>Not Compliant</strong>
-                                </label>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Audit Questions</strong><br>Please record any quality issues or food safety issues. Remember to <strong>submit your audit</strong> at the end to save it in the system.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    {% for q in question %}
+                    <li class="list-group-item" id="question-group-box">
+                        <div class="question-area">
+                            <h5 class="audit-questions">{{q.question}}</h5>
+                            {{form.as_p}}
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Production Location:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                <option disabled selected value> -- select an area -- </option>
+                                {% for loc in location %}
+                              <option>{{loc.name}}</option>
+                              {% endfor %}
+                            </select>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="commentCheckbox">
+                                    <label class="custom-control-label" for="commentCheckbox">Tick To Add Comment?</label>
+                                </div>
                             </div>
                         </div>
                     </li>
-                    <form>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="commentCheckbox" checked>
-                            <label class="custom-control-label" for="commentCheckbox">Add Comment?</label>
-                        </div>
-                        <div class="form-group" id="freetext-area">
-                            <label for="formGroupExampleInput">Freetext:</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Freetext goes here..">
-                        </div>
-                    </form>
-                    <div class="row" id="area-audit">
-                        <p class="p-section">Area:</p>
-                        <select class="form-control col-sm-4">
-                        <option>Prep</option>
-                        <option>Mixing</option>
-                      </select>
-                        <p class="p-section">Responsible For Corrective Action:</p>
-                        <select class="form-control col-sm-3">
-                      <option></option>
-                      <option>Tom Dignan</option>
-                      <option>Ian Donnelly</option>
-                    </select>
+                    {% endfor %}
+                    <div class="card-body">
+                        <form action="" method="POST" class="submit-audit-btn"> {% csrf_token %}
+                            <input type="submit" name="Submit" class="btn btn-success  btn-lg btn-block">
+                        </form>
+
+                        <div class="cancel-btn">
+                            <a href="{% url 'dashboard' %}" class="btn btn-danger btn-lg btn-block">Cancel Audit</a></div>
                     </div>
                 </div>
+
             </div>
-        </div>
 
-
-        <div class="card-body">
-            <form action="" method="POST"> {% csrf_token %} {{form}}
-                <input type="submit" name="Submit" class="btn btn-success">
-            </form>
-            <div class="cancel-btn">
-                <a href="{% url 'dashboard' %}" class="btn btn-danger">Cancel Audit</a></div>
         </div>
     </div>
 
