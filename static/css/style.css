@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 .main-navbar {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
     height: 5rem;
     background-color: #0077b6;
@@ -17,6 +17,10 @@
 
 .login-text {
     font-size: 0.8rem;
+}
+
+.logo-about {
+    width: 100%;
 }
 
 .navbar a {
@@ -528,4 +532,27 @@ primaryAction {
 
 .cancel-btn {
     padding-top: 2rem;
+    text-align: center;
+}
+
+
+/* Audit styling for form */
+
+.audit-questions {
+    text-align: center;
+}
+
+#audit-body-form {
+    background-color: #c1e0f7
+}
+
+#question-group-box {
+    background-color: #0077b6;
+    color: #fafafa;
+    border-color: #fafafa;
+    border-style: solid;
+}
+
+.submit-audit-btn {
+    text-align: center;
 }
