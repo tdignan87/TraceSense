@@ -556,3 +556,7 @@ primaryAction {
 .submit-audit-btn {
     text-align: center;
 }
+
+.submit-btn {
+    padding-top: 2rem;
+}
