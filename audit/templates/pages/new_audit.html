@@ -15,28 +15,27 @@
                                             </button>
                             </div>
                             {% for q in question %}
-                            <li class="list-group-item" id="question-group-box">
-                                <div class="question-area">
-                                    <h5 class="audit-questions">{{q.question}} {{q.gmp_questionid}}</h5>
-                                    {{form.as_p}}
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Production Location:</label>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="commentCheckbox">
-                                            <label class="custom-control-label" for="commentCheckbox">Tick To Add Comment?</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            {% endfor %}
-                            <input type="submit" name="Submit" class="btn btn-success  btn-lg btn-block">
+                            <p>
+                                <label for="question">{{ q.question}}</label>
+                                <input type="hidden" id="q.question{{ q.gmp_question_id }}" name="gmp_question" value="{{ form.gmp_question.id }}" />
+                            </p>
+                            {{form.as_p}}
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="commentCheckbox">
+                                <label class="custom-control-label" for="commentCheckbox">Tick To Add Comment?</label>
+                            </div>
                         </div>
                     </div>
+                    </li>
+                    {% endfor %}
+                    <input type="submit" name="Submit" class="btn btn-success  btn-lg btn-block">
                 </div>
-            </form>
-            <div class="cancel-btn">
-                <a href="{% url 'dashboard' %}" class="btn btn-danger btn-lg btn-block">Cancel Audit</a></div>
         </div>
+    </div>
+    </form>
+    <div class="cancel-btn">
+        <a href="{% url 'dashboard' %}" class="btn btn-danger btn-lg btn-block">Cancel Audit</a></div>
+    </div>
     </div>
 
 
