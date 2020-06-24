@@ -39,6 +39,7 @@ $(window).ready(function() {
     $("#alert-area").hide();
     $("#audit-area").hide();
     $("#id_freetext").hide();
+    $(".commentText").hide();
     $("#commentCheckbox").prop("checked", false);
 });
 
@@ -58,12 +59,16 @@ $("#department-nav").click(function(e) {
     $("#production-area").hide();
     $("#alert-area").hide();
     $("#audit-area").hide();
+    $(".commentText").hide();
+
 });
 
 $("#commentCheckbox").click(function() {
     if ($("#commentCheckbox").prop('checked')) {
+        $(".commentText").show();
         $("#id_freetext").show();
     } else {
+        $(".commentText").hide();
         $("#id_freetext").hide();
     }
 })
