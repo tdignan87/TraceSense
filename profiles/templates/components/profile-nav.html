@@ -11,17 +11,16 @@
                 <p><strong>Menu</strong></p>
             </div>
             <a href="{% url 'new_audit' %}" class="list-group-item list-group-item-action bg-light">New Audit</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Edit Audits</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Delete Audits</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Outstanding Tasks</a>
+            <a href="{% url 'list_audits' %}" class="list-group-item list-group-item-action bg-light">Edit Audits</a>
+            <a href="{% url 'open_actions' %}" class="list-group-item list-group-item-action bg-light">Outstanding Tasks</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Completed Tasks</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Audit History</a>
             <div class="section-head">
                 <p>Settings</p>
             </div>
-            <a href="#" class="list-group-item list-group-item-action bg-light" id="department-nav">Departments</a>
+            <a href="#" class=" disabled list-group-item list-group-item-action bg-light" id="department-nav">Departments</a>
             <a href="#" class="list-group-item list-group-item-action bg-light" id="production-nav">Production Areas</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light" id="alert-nav">Alert Management</a>
+            <a href="#" class=" disabled list-group-item list-group-item-action bg-light" id="alert-nav">Alert Management</a>
             <a href="#" class="list-group-item list-group-item-action bg-light" id="questions-nav">Create Questions</a>
         </div>
 
