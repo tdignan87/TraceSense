@@ -5,38 +5,34 @@
         <div class="card-body">
             <form action="" method="POST" class="submit-audit-btn"> {% csrf_token %}
                 <div class="card">
-                    <h5 class="card-header support-header">New Audit</h5>
+                    <h5 class="card-header support-header">Audit Question</h5>
                     <div class="card-body" id="audit-body-form">
                         <div class="list-group">
                             <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                <strong>Audit Questions</strong><br>Please record any quality issues or food safety issues. Remember to <strong>submit your audit</strong> at the end to save it in the system.
+                                <strong>Audit Questions</strong><br>Please record any quality issues or food safety issues. Remember to <strong>submit your answer</strong> at the end to save it in the system.
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                             </button>
                             </div>
-                            {% for q in question %}
-                            <p>
-                                <label for="question">{{ q.question}}</label>
-                                <input type="hidden" id="q.question{{ q.gmp_question_id }}" name="gmp_question" value="{{ form.gmp_question.id }}" />
-                            </p>
-                            {{form.as_p}}
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="commentCheckbox">
-                                <label class="custom-control-label" for="commentCheckbox">Tick To Add Comment?</label>
+                            <div class="audit-area" id="#question-group-box">
+                                {{form.as_p}}
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="commentCheckbox">
+                                    <label class="custom-control-label" for="commentCheckbox">Tick To Add Comment?</label>
+                                </div>
                             </div>
                         </div>
+                        </li>
+                        <input type="submit" name="Submit" class="btn btn-success  btn-lg btn-block">
                     </div>
-                    </li>
-                    {% endfor %}
-                    <input type="submit" name="Submit" class="btn btn-success  btn-lg btn-block">
+                    <div class="cancel-btn">
+                        <a href="{% url 'dashboard' %}" class="btn btn-danger btn-lg btn-block">Cancel Audit</a>
+                    </div>
                 </div>
+            </form>
         </div>
     </div>
-    </form>
-    <div class="cancel-btn">
-        <a href="{% url 'dashboard' %}" class="btn btn-danger btn-lg btn-block">Cancel Audit</a></div>
-    </div>
-    </div>
+
 
 
 </section>
