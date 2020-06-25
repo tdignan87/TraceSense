@@ -30,7 +30,6 @@
 }
 
 .img-nav {
-    width: 50px;
     height: 40px;
 }
 
@@ -543,10 +542,6 @@ primaryAction {
 }
 
 #audit-body-form {
-    background-color: #c1e0f7
-}
-
-#question-group-box {
     background-color: #0077b6;
     color: #fafafa;
     border-color: #fafafa;
