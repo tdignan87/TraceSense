@@ -1,5 +1,6 @@
 let featuresSection = document.getElementById("features-area");
 
+
 /**
  * Learn more btn click event go to relevant section of page that shows more 
  * information.
@@ -41,6 +42,8 @@ $(window).ready(function() {
     $("#id_freetext").hide();
     $(".commentText").hide();
     $("#commentCheckbox").prop("checked", false);
+
+
 });
 
 
@@ -108,4 +111,8 @@ $("#questions-nav").click(function(e) {
     $("#department-area").hide();
     $("#production-area").hide();
     $("#alert-area").hide();
+});
+
+$(".print-btn").click(function() {
+    window.print();
 });
