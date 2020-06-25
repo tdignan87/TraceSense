@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 .main-navbar {
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     height: 5rem;
     background-color: #0077b6;
@@ -27,6 +27,10 @@
     display: block;
     color: #fafafa;
     text-align: center;
+}
+
+#navbarTogglerDemo02 {
+    padding-bottom: 1rem;
 }
 
 .img-nav {
@@ -554,4 +558,8 @@ primaryAction {
 
 .submit-btn {
     padding-top: 2rem;
+}
+
+.card-title-user {
+    text-align: center;
 }
