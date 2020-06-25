@@ -4,6 +4,7 @@ from django.contrib.auth import user_logged_in
 
 def main_page(request):
     """ A view to return the main home page """
+    
     return render(request,"pages/index.html")
 
 def support_page(request):
