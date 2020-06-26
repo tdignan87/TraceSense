@@ -563,3 +563,11 @@ primaryAction {
 .card-title-user {
     text-align: center;
 }
+
+.card-body-account {
+    text-align: center;
+}
+
+#reset-form-card {
+    padding-top: 2rem;
+}
