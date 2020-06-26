@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/purchase.css' %}">{% endblock %}
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
-    <title>Traceability Software</title>
+    <title>{% block title %}{% endblock %}</title>
 
 </head>
 
