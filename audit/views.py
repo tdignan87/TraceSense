@@ -56,3 +56,9 @@ def open_actions(request):
     audit_actions = Transactions.objects.filter(user_id=request.user.id,
                                                 status="Open")
     return render(request,"pages/open_actions.html",{"data":audit_actions})
+
+def completed_actions(request):
+    """Show list of completed audit action items"""
+    audits_completed = Transactions.objects.filter(user_id=request.user.id,
+                                                    status="Closed")
+    return render(request,"pages/completed.html",{"data":audits_completed})
