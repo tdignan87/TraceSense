@@ -16,3 +16,7 @@ def about_page(request):
     """ A view to return the about page """
     return render(request,"pages/about.html")
 
+def pricing_page(request):
+    """ A view to return the pricing page """
+    return render(request,"pages/pricing_page.html")
+
