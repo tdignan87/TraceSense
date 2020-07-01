@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+
 
 
 def profile_page(request):
-   
-    return render(request,"pages/dashboard.html")
+   """ renders dashboard page showing information and menu items to user."""
+   return render(request,"pages/dashboard.html")
 
 def change_password(request):
     return render(request,"allauth/account/password_change.html")
