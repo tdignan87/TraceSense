@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}{% block title %}Completed Actions{% endblock %}{% load static %}{% block content %} {% if user.is_authenticated %}
+<section class="edit-departments">
+    <div class="container" id="edit-department-list">
+        <div class="card">
+            <h5 class="card-header support-header">Completed Actions</h5>
+            <div class="card-body">
+                <div class="list-group">
+                    {% for actions in data %}
+                    <h5 class="mb-1">{{actions.gmp_question.question}}</h5>
+                    <li class="list-group-item"> Created {{actions.created}} for location <strong>{{actions.location.name}}.</strong>
+                        <div class="options-menu">
+                            <a class="btn btn-primary btn-sm" href="">Amend</a>
+
+                        </div>
+                    </li>{% endfor %}
+                </div>
+
+            </div>
+            <div class="action-btns">
+                <div class="cancel-btn col-sm-12">
+                    <a href="{% url 'dashboard' %}" class="btn btn-danger">Return</a>
+                </div>
+                <div class="print-btn col-sm-6">
+                    <a href="" class="btn btn-info">Print</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+{% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}
