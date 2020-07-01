@@ -19,8 +19,7 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, 'Sorry, your payment cannot be processed right now. Please try again later.')
-        return HttpResponse(content=e, status=400)
+        return redirect(purchase_failure)
 
 
 def purchase(request):
@@ -83,5 +82,10 @@ def purchase_success(request, order_number):
     context = {
         'order': order,
     }
-    
     return render(request, template, context)
+
+def purchase_failure():
+    """ 
+    exception page for failed payments
+    """
+    return render("pages/failure.html")
