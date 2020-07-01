@@ -1,5 +1,6 @@
 import uuid
 from django.db import models
+from django.contrib.auth.models import User
 from django.db.models import Sum
 from django.conf import settings
 
@@ -16,6 +17,8 @@ class Order(models.Model):
     street_address = models.CharField(max_length=80, null=False, blank=False)
     date = models.DateTimeField(auto_now_add=True)
     grand_total = models.IntegerField( null=False, default=200)
+    
+    
     
     
     def _generate_order_number(self):
