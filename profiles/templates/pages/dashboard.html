@@ -16,23 +16,34 @@
     <div class="container user-details-dash">
         <h1 class="dash-header"></h1>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title-user">User Details:</h5>
                         <p class="card-text">Username: <strong>{{user.username}}</strong></p>
                         <p>Email:<strong> {{user.email}}</strong></p>
                         <p>Date Joined: <strong>{{user.date_joined}}</strong></p>
-                        <p>Subscription Type: <strong>Free</strong></p>
+
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body-account">
                         <h5 class="card-title-user">Account Details</h5>
                         <a href="{% url 'change_password' %}" class="password-link">Click to change password</a></strong><br>
                         <a href="{% url 'reset_password' %}" class="password-link">Click to reset password</a></strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body-account">
+                        {% if user.email == order.email %}
+                        <p>Subscription Type: <strong>Subscribed</strong></p>
+                        {% else %}
+                        <p>Subscription Type: <strong>Free</strong></p>
+                        {% endif %}
                     </div>
                 </div>
             </div>
