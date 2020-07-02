@@ -53,9 +53,11 @@ def delete_audit(request,pk):
 
 def open_actions(request):
     """Show list of open audit items"""
+    
     audit_actions = Transactions.objects.filter(user_id=request.user.id,
                                                 status="Open")
     return render(request,"pages/open_actions.html",{"data":audit_actions})
+    
 
 def completed_actions(request):
     """Show list of completed audit action items"""
