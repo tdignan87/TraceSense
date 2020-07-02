@@ -338,6 +338,7 @@ STREET_ADDRESS| VarChar(80)| string| No | No |
 - [PostGres](https://www.postgresql.org/) is the database for this project when deployed on Heroku.
 - [GitHub](https://github.com/) to store and share all project code remotely.
 - [Balsamiq](https://balsamiq.com/) used to create the wireframes for my project.
+- [AWS](https://aws.amazon.com/) used for storing images from database. (Set up but not being used. Will be future requirement in application.)
 
 ### Libraries
 
@@ -554,6 +555,13 @@ To deploy Tracesense to heroku, take the following steps:
 DATABASE_URL | Value from your variables file
 SECRET_KEY | Value from your variables file
 DEBUG | False
+EMAIL_PASS | Value from your variables file
+EMAIL_USER | Value from your variables file
+STRIPE_PUBLIC_KEY | Value from your variables file
+STRIPE_SECRET_KEY | Value from your variables file
+STRIPE_WH_KEY | Value from your variables file
+
+
 
 (Please note if your using Stripe then you will need to set up relevant config vars for that.)
 
