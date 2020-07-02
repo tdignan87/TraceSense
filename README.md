@@ -109,7 +109,7 @@ The following design choices were made:
 
 ### Fonts
 
-* Google Font [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) was chosen as it looks great across multiple interfaces.
+* Google Font [Lato](https://fonts.google.com/specimen/Lato) was chosen as it looks great across multiple interfaces.
 
 ### Colours
 
