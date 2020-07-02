@@ -408,21 +408,25 @@ All results passed with no issues.
 Tests passed based on the above criteria.
 
 
-#### Third Test:
+#### Viewing Audit Results:
 
 * **Plan**<br>
+Ability to view audit results data from the dashboard.
 
 
 * **Implementation**<br>
+Created a view for showing table results.
 
 
 * **Test**<br>
-
+I tested this by creating the view and verifying the database contents with the contents on the page.
 
 * **Result**<br>
+All results passed with no issues.
 
 
 * **Verdict**<br>
+Tests passed on above criteria.
 
 # Bugs
 
