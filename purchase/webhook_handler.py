@@ -23,7 +23,6 @@ class StripeWH_Handler:
         
         intent = event.data.object
         
-        
         return HttpResponse(
             content=f'Webhook received:{event["type"]}',
             status=200)
