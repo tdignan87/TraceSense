@@ -34,7 +34,7 @@ def update_audit(request,pk):
     audit = Transactions.objects.get(audit_id=pk)
     form = AuditTransaction(instance=audit)
     if request.method =="POST":
-        audit = AuditTransaction(request.POST, instance=audit)
+        form = AuditTransaction(request.POST, instance=audit)
         if form.is_valid():
             form.save()
             return redirect(audit_list)
