@@ -59,9 +59,7 @@ Tracesense is my own company i created in November 2019 and decided to go with t
 10. [Disclamer](#disclamer)
 
   
-
 ----
-
 
 # UX
 
@@ -115,10 +113,17 @@ The following design choices were made:
 
 ### Colours
 
-* The colours for this project were choosen based on the two primary colours in my company logo. These colours are
+* The colours for this project were choosen based on one primary colour.
 
-- ![#0069A8](https://via.placeholder.com/15/0069A8/000000?text=+) `#0069A8`
-- ![#42BFE0](https://via.placeholder.com/15/42BFE0/000000?text=+) `#42BFE0`
+- ![#0077b6](https://via.placeholder.com/15/0077b6/000000?text=+) `#0077b6`
+
+The following additional colours were also used:
+
+- ![#292b2c](https://via.placeholder.com/15/292b2c/000000?text=+) `#292b2c`
+- ![#ee6c4d](https://via.placeholder.com/15/ee6c4d/000000?text=+) `#ee6c4d`
+- ![#2980b9](https://via.placeholder.com/15/2980b9/000000?text=+) `#2980b9`
+- ![#fafafa](https://via.placeholder.com/15/fafafa/000000?text=+) `#fafafa`
+
 
 ## Wireframes
 
@@ -182,12 +187,27 @@ Please see below a process flow chart of how users will use the application.
 - Navbar
     - The navigation bar features the TraceSense company logo..
     - For users using the app there is a list of navbar options available regardless of the page loaded. These are:
-    1. Products
-    2. Support
-    3. Pricing
+    1. Pricing
+    2. Contact Us
+    3. About Us
 
-### Features on main Page:
-To Be Completed
+### Features
+
+1. Creating Audit Questions<br>
+Create your own audit questions tailored to your company's needs. Total customisable.
+
+2. Own Profile<br>
+Create your own account with your own customisable questions, audits etc for your own app.
+
+3. Production Areas<br>
+Create your own production areas for your audits.
+
+4. Outstanding Actions<br>
+View your outstanding open audit actions in the system.
+
+5. Completed Actions<br>
+View your completed actions audit list in the system.
+
 
 ## Features left to Implement
 
@@ -212,6 +232,9 @@ User can create a maintenance request (form) which will be emailed to the mainte
 
 7. Quality Assurance Non Conformance Log<br>
 In the App it would be great if during production quality assurance personnel can log non conforming issues in the system. They select what product is running, and record non-conforming details for that product. 
+
+8. Departments & Alerts Section <br>
+Enable departments section so open actions can be assigned against a department and specific individual.
 
 
 # Information Architecture
