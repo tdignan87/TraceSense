@@ -253,55 +253,81 @@ Typical types of data stored in the database are
 
 Tracesense relies on the following data structure in addition to the django default authentication tables:
 
-TBL_GMP_QUESTIONS
+GMO_QUESTIONS
 
 | Title | data type | value | Primary Key | Allow Null |
 --- | --- | --- | --- | ---
 GMP_QUESTIONID | Integer | unique | Yes| No |
 QUESTION | VarCar(255) | text | No| No |
 CREATED | DateTime | DateTime | No| No |
-DELETED | bool | bool | No | Yes |
+USER_ID | Integer | unique | Yes | No |
 
 
 
-TBL_GMP_ANSWERS
+AUDIT_TRANSACTIONS
 
 | Title | data type | value | Primary Key | Allow Null |
 --- | --- | --- | --- | ---
-GMP_ID | Integer | unique | Yes | No |
+AUDIT_ID | Integer | unique | Yes | No |
 GMP_QUESTIONID | int | unique | No | No |
-ANSWER_CORRECT | VarChar(30)| text | No | Yes |
-ANSWER_INCORRECT | VarChar(255) | text| No | Yes |
-USERID| int| unique| int | No |
-STAMP| DateTime| DateTime| No | No |
-IMAGE| Blob|Image| No |Yes |
+STATUS | VarChar(255) | text| No | Yes |
+CREATED| DateTime| DateTime| No | No |
+FREETEXT | VarChar(255) | text| No | Yes |
+USER_ID | Integer | unique | Yes | No |
+LOCATION_ID | Integer | unique | Yes | No |
+COMPLIANT | Boolean | Bool | No | No |
 
 
-USERS
-
-| Title | data type | value | Primary Key | Allow Null |
---- | --- | --- | --- | ---
-USERID| Integer | unique | Yes | No |
-CODE| VarChar(30)| string | No | No |
-NAME| VarChar(255)| string| No | No |
-PASSWD| VarChar(30)| string| No| No |
-TRUSTED_SUPERVISOR| Bool| Bool| No | No |
-
-ALERTUSRS
+AUTH_USERS
 
 | Title | data type | value | Primary Key | Allow Null |
 --- | --- | --- | --- | ---
-ALERTID| Integer | unique | Yes | No |
-NAME| VarChar(30)| string | No | No |
-EMAIL| VarChar(255)| string| No | No |
-DEPARTMENTID| Integer| unique| No | No |
+ID| Integer | unique | Yes | No |
+PASSWORD| VarChar(128)| string | No | No |
+FIRST_NAME| VarChar(30)| string| No | No |
+LAST_NAME| VarChar(30)| string| No | No |
+IS_STAFF| Bool| Bool| No | No |
+IS_ACTIVE| Bool| Bool| No | No |
+IS_SUPERUSER| Bool| Bool| No | No |
+EMAIL| VarChar(254)| string| No | No |
+DATE_JOINED| DateTime| DateTime| No | No |
+
 
 DEPARTMENTS
 
 | Title | data type | value | Primary Key | Allow Null |
 --- | --- | --- | --- | ---
-DEPARTMENTID| Integer | unique | Yes | No |
+DEPARTMENT_ID| Integer | unique | Yes | No |
 DEPARTMENT| VarChar(255)| string| No | No |
+CREATED| DateTime| DateTime| No | No |
+USER_ID | Integer | unique | Yes | No |
+
+LOCATIONS
+
+| Title | data type | value | Primary Key | Allow Null |
+--- | --- | --- | --- | ---
+LOCATION_ID| Integer | unique | Yes | No |
+CODE| VarChar(255)| string| No | No |
+NAME| VarChar(255)| string| No | No |
+CREATED| DateTime| DateTime| No | No |
+USER_ID | Integer | unique | Yes | No |
+
+
+PURCHASE_ORDER
+
+| Title | data type | value | Primary Key | Allow Null |
+--- | --- | --- | --- | ---
+ID| Integer | unique | Yes | No |
+COUNTRY| VarChar(40)| string| No | No |
+ORDER_NUMBER| VarChar(32)| string| No | No |
+PHONE_NUMBER| VarChar(20)| string| No | No |
+POSTCODE| VarChar(20)| string| No | No |
+EMAIL| VarChar(254)| string| No | No |
+NAME| VarChar(255)| string| No | No |
+DATE| DateTime| DateTime| No | No |
+GRAND_TOTAL| Int | Int | No | No |
+STREET_ADDRESS| VarChar(80)| string| No | No |
+
 
 # Technologies Used
 
@@ -347,38 +373,39 @@ Any features added were tested locally after implemntation for this project and 
 
 ### Feature Testing
 
-#### First Test:
+#### User Registration, SMTP Authentication & Logging In:
 
 * **Plan**<br>
-
+I wanted to use log in authentication as sensitive data is visible.
 
 * **Implementation**<br>
-
+I used Django allauth for my user authentication.
 
 * **Test**<br>
-
+I tested this by creating an account, using my mail to verify and then logging into the site. I tried different passwords and usernames to try and bypass.
 
 * **Result**<br>
-
+The test passed successfully with no issues.
 
 * **Verdict**<br>
+The test passed on the above criteria.
 
-
-#### Second Test:
+#### Showing Data Relevant To That User Only:
 
 * **Plan**<br>
-
+I wanted to only display that logged in user's information so other account's audit information is not visible.
 
 * **Implementation**<br>
-.
+I created a filter to only show on userid in my views.py file.
 
 * **Test**<br>
-
+I tested this by using various accounts to see what data is visible to me/not visible.
 
 * **Result**<br>
-
+All results passed with no issues.
 
 * **Verdict**<br>
+Tests passed based on the above criteria.
 
 
 #### Third Test:
