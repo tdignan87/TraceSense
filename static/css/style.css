@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+body {
+    font-family: 'Fira Sans', cursive;
+}
+
 .main-navbar {
     padding-top: 2rem;
     padding-bottom: 2rem;
