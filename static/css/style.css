@@ -283,6 +283,15 @@ section.pricing {
     color: #fafafa;
 }
 
+#payment-btn {
+    text-align: center;
+}
+
+.payment-form-area {
+    border-style: outset;
+    border-color: #0077b6;
+}
+
 .login-form {
     width: 340px;
     margin: 50px auto;
