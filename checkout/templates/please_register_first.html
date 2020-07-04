@@ -1,0 +1,22 @@
+{% block please_register %} {% load static %}
+
+<div class="container" id="oops-statement">
+    <div class="card">
+        <h5 class="card-header support-header">Oops!</h5>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <p class="centered-p">Please log in our create an account first with us.</p><br>
+                    <p class="centered-p">Click here to create a new account. <a href="{% url 'account_signup' %}">Create Account</a></p>
+                </div>
+                <p class="centered-p">Already have an account? Then please <a href="{{ login_url }}">sign in</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "layouts/base.html" %}{% block title %}{{user.username}} Dashboard{% endblock %}{% load static %} {% block content %} {% include 'components/profile-nav.html' %} {% if user.is_authenticated %}
+
+
+
+<section class="dashboard-section">
+    <div class="container">
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+                </button>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="container user-details-dash">
+        <h1 class="dash-header"></h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title-user">User Details:</h5>
+                        <p class="card-text">Username: <strong>{{user.username}}</strong></p>
+                        <p>Email:<strong> {{user.email}}</strong></p>
+                        <p>Date Joined: <strong>{{user.date_joined}}</strong></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body-account">
+                        <h5 class="card-title-user">Account Details</h5>
+                        <a href="{% url 'change_password' %}" class="password-link">Click to change password</a></strong><br>
+                        <a href="{% url 'reset_password' %}" class="password-link">Click to reset password</a></strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body-account">
+                        {% if user.id == order.user_id %}
+                        <p>Subscription Type: <strong>Subscribed {{order.full_name}}</strong></p>
+                        {% else %}
+                        <p>Subscription Type: <strong>Free {{order.full_name}}</strong></p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container options-container" id="dash-items">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Open Actions</h5>
+                            <p class="card-text">0 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Closed Actions</h5>
+                            <p class="card-text">0 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="departments-section">
+            {% include 'pages/departments.html' %} {% include 'pages/areas.html' %} {% include 'components/alert.html' %} {% include 'pages/questions.html' %}
+
+
+        </section>
+
+
+        {% if user.is_authenticated %} {% for user in auth_user %}
+        <p class="signed-in">{{user.username}} User</p>
+        {% endfor %} {% else %}
+        <p class="signed-in">Not signed in check</p> {% endif %} {% else %} {% include 'components/oops.html' %} {% endif %}
+
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}{% block title %}Payment Successful!{% endblock %} {%load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/purchase.css' %}"> {% endblock %} {% block content %} {% if user.is_authenticated %}
+
+
+<section class="success-payment">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-header payment-header">Thank you for your payment</h5>
+                <p class="p-center"> Thank you for buying TraceSense.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-7 text-right">
+                    <p>Click to go to your profile</p>
+                    <a href="{% url 'dashboard' %}" class="btn btn-primary">Dashboard</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% else %} {% include 'components/oops.html' %} {% endif %}{% endblock %}
