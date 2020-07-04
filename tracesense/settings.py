@@ -48,14 +48,16 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'purchase',
     'profiles',
+    'purchase',
     'tracesense',
     'audit',
     'departments',
     'areas',
     'questions',
+    'checkout',
     'send',
+    'dashboard',
    # Other
    'crispy_forms',
    'storages',
@@ -134,7 +136,7 @@ if 'DATABASE_URL' in os.environ:
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
 else:
- DATABASES = {
+    DATABASES = {
         'default': {
            'ENGINE': 'django.db.backends.mysql',
            'OPTIONS': {
