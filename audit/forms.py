@@ -1,5 +1,6 @@
 from django import forms
 from .models import Transactions
+from django.contrib.auth.models import User
 
 class AuditTransaction(forms.ModelForm):
     class Meta:
@@ -21,3 +22,4 @@ class AuditTransaction(forms.ModelForm):
         
             }
       
+  
