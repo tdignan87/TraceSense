@@ -1,5 +1,6 @@
 from django.urls import path, include
-from profiles.views import profile_page,change_password,reset_password
+from profiles.views import change_password,reset_password
+from dashboard.views import profile_page
 
 urlpatterns = [
     path("",profile_page,name="dashboard"),
