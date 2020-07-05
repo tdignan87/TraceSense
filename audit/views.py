@@ -7,9 +7,9 @@ from .forms import AuditTransaction
 def new_audit(request):
     """ Create new audit and store into the database."""
     auditForm = AuditTransaction()
-    my_questions = Gmp_questions.objects.filter(user_id=request.user)
-    my_locations = Locations.objects.filter(user_id=request.user)
-    gmp_data_audit = Transactions.objects.filter(user_id=request.user)
+    my_questions = Gmp_questions.objects.filter(user_id=request.user.id)
+    my_locations = Locations.objects.filter(user_id=request.user.id)
+    gmp_data_audit = Transactions.objects.filter(user_id=request.user.id)
     if request.method == "POST":
         form = AuditTransaction(request.POST)
         if form.is_valid():
