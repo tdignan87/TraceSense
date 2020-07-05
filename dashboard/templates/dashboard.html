@@ -38,11 +38,11 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body-account">
-                        {% if user.id == order.user_id %}
-                        <p>Subscription Type: <strong>Subscribed {{order.full_name}}</strong></p>
+                        {% for order in order %} {% if user.id == order.user_id %}
+                        <p>Subscription Type: <strong>Subscribed</strong></p>
                         {% else %}
-                        <p>Subscription Type: <strong>Free {{order.full_name}}</strong></p>
-                        {% endif %}
+                        <p>Subscription Type: <strong>Free</strong></p>
+                        {% endif %} {% endfor %}
                     </div>
                 </div>
             </div>
