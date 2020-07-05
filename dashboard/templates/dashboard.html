@@ -1,8 +1,7 @@
 {% extends "layouts/base.html" %}{% block title %}{{user.username}} Dashboard{% endblock %}{% load static %} {% block content %} {% include 'components/profile-nav.html' %} {% if user.is_authenticated %}
 
 
-
-<section class="dashboard-section">
+<section class="dashboard-section" id="dashboard-area">
     <div class="container">
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
