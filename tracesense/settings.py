@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
-from profiles.views import profile_page
 if os.path.exists("env.py"):
     import env
 
@@ -121,7 +120,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = profile_page
+LOGIN_REDIRECT_URL = '/dashboard/'
 
 
 
@@ -190,7 +189,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-# set to disabled in Heroku for now as using whitenoise
+# set to disabled in Heroku for now as using whitenoise. Will be future implementation.
 if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'tracesense'
