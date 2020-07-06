@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %}{% block title %}Completed Actions{% endblock %}{% load static %}{% block content %} {% if user.is_authenticated %}
+{% extends "layouts/base.html" %}{% block title %}Completed Actions{% endblock %}{% load static %}{% block content %} {% if user.is_authenticated %} {% if user.id == orders.user_id %}
 <section class="edit-departments">
     <div class="container" id="edit-department-list">
         <div class="card">
@@ -27,4 +27,4 @@
     </div>
 
 </section>
-{% else %} {% include 'components/oops.html' %} {% endif %} {% endblock %}
+{% else %} {% include 'components/oops.html' %} {% endif %} {% endif %} {% endblock %}
