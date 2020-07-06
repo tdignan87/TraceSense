@@ -1,4 +1,4 @@
-{% block pricing %} {% load static %}
+{% block pricing %}{% load static %}
 <section class="pricing py-5" id="pricing-area">
     <div class="container">
         <div class="row">
@@ -9,6 +9,7 @@
                         <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
                         <h6 class="card-price text-center">£0<span class="period">/month</span></h6>
                         <hr>
+
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check-square"></i></i></span>Unlimited Questions</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>View Completed Audits</li>
@@ -16,10 +17,13 @@
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Production Areas</li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Software Updates</li>
                         </ul>
-                        <a href="{% url 'account_signup' %}" class="btn btn-block btn-primary text-uppercase free-btn">Register Today</a>
+                        {% if user.is_authenticated %}
+                        <p class="centered-p"><strong> You have already created a free account!</p></strong> {% else %}
+                            <a href="{% url 'account_signup' %}" class="btn btn-block btn-primary text-uppercase free-btn">Register Today</a> {% endif %}
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-6">
                 <div class="card mb-5 mb-lg-0">
                     <div class="card-body">
@@ -33,10 +37,13 @@
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Software Support</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Software Updates</li>
                         </ul>
-                        <a href="{% url 'checkout' %}" class="btn btn-block btn-primary text-uppercase dynamic-btn">Sign Up Today!</a>
+                        {% if order.user_id == request.user.id %}
+                        <p class="centered-p"><strong> You have already purchased TraceSense!</p></strong> {% else %}
+                            <a href="{% url 'checkout' %}" class="btn btn-block btn-primary text-uppercase dynamic-btn">Sign Up Today!</a> {% endif %}
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
