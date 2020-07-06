@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Gmp_questions,Transactions,Locations
+from checkout.models import Order
 from .forms import AuditTransaction
 
 
@@ -19,14 +20,13 @@ def new_audit(request):
             return redirect(audit_list)
     context = {'form':auditForm,
                'question':my_questions,
-               'location':my_locations,}
+               'location':my_locations}
     return render(request,"pages/new_audit.html",context)
 
 
 def audit_list(request):
     """ Show list of audit items """
     audit_data = Transactions.objects.filter(user_id=request.user.id)
-
     return render(request,"pages/view_audits.html",{"data":audit_data})
 
 def update_audit(request,pk):
@@ -53,14 +53,20 @@ def delete_audit(request,pk):
 
 def open_actions(request):
     """Show list of open audit items"""
-    
+    myOrder = Order.objects.filter(user_id=request.user.id)
     audit_actions = Transactions.objects.filter(user_id=request.user.id,
-                                                status="Open")
-    return render(request,"pages/open_actions.html",{"data":audit_actions})
+                                                status="Open",
+                                                )
+    context={'orders':myOrder}
+    return render(request,"pages/open_actions.html",{"data":audit_actions,
+                                                     "orders":myOrder})
     
 
 def completed_actions(request):
     """Show list of completed audit action items"""
+    myOrder = Order.objects.filter(user_id=request.user.id)
     audits_completed = Transactions.objects.filter(user_id=request.user.id,
                                                     status="Closed")
-    return render(request,"pages/completed.html",{"data":audits_completed})
+    context={'orders':myOrder}
+    return render(request,"pages/completed.html",{"data":audits_completed,
+                                                  "orders":myOrder})
