@@ -5,9 +5,8 @@ from checkout.models import Order
 
 def profile_page(request):
    """ renders dashboard page showing information and menu items to user."""
-   has_paid = Order.objects.filter(user_id=request.user.id)
-   context = {'orders':has_paid}
-   print(context)
+   order = Order.objects.get()
+   context = {'order':order}
    return render(request,"dashboard.html",context)
 
 def change_password(request):
