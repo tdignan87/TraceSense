@@ -236,6 +236,9 @@ In the App it would be great if during production quality assurance personnel ca
 8. Departments & Alerts Section <br>
 Enable departments section so open actions can be assigned against a department and specific individual.
 
+9. Loading spinner for dashboard page<br>
+Loading page for dashboard page spinner should be implemented but ran out of time with the project.
+
 
 # Information Architecture
 
