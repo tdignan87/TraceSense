@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,get_object_or_404
 from .models import Gmp_questions,Transactions,Locations
 from checkout.models import Order
 from .forms import AuditTransaction
@@ -53,20 +53,20 @@ def delete_audit(request,pk):
 
 def open_actions(request):
     """Show list of open audit items"""
-    myOrder = Order.objects.filter(user_id=request.user.id)
+    order = get_object_or_404(Order, user_id=request.user.id)
     audit_actions = Transactions.objects.filter(user_id=request.user.id,
                                                 status="Open",
                                                 )
-    context={'orders':myOrder}
+    context={'orders':order}
     return render(request,"pages/open_actions.html",{"data":audit_actions,
-                                                     "orders":myOrder})
+                                                     "orders":order})
     
 
 def completed_actions(request):
     """Show list of completed audit action items"""
-    myOrder = Order.objects.filter(user_id=request.user.id)
+    order = get_object_or_404(Order, user_id=request.user.id)
     audits_completed = Transactions.objects.filter(user_id=request.user.id,
                                                     status="Closed")
-    context={'orders':myOrder}
+    context={'orders':order}
     return render(request,"pages/completed.html",{"data":audits_completed,
-                                                  "orders":myOrder})
+                                                  "orders":order})
