@@ -6,9 +6,10 @@ from django.conf import settings
 import stripe
 
 def checkout(request):
+    """ A view for handling stripe payments purchasing products page."""
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-    
+    order = Order.objects.get()
     if request.method == 'POST':
         stripe_total = 200 * 100
         form = OrderForm(request.POST)
@@ -28,7 +29,8 @@ def checkout(request):
         checkoutForm = OrderForm()
         context = {'form':checkoutForm,
                 'stripe_public_key': stripe_public_key,
-                'client_secret': intent.client_secret}
+                'client_secret': intent.client_secret,
+                'order':order}
     return render(request,"checkout.html",context)
 
 def payment_success(request):
