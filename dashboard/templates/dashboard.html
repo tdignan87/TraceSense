@@ -38,7 +38,7 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body-account">
-                        {% for order in order %} {% if user.id == order.user_id %}
+                        {% for order in orders %} {% if user.id == order.user_id %}
                         <p>Subscription Type: <strong>Subscribed</strong></p>
                         {% else %}
                         <p>Subscription Type: <strong>Free</strong></p>
