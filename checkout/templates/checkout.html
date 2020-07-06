@@ -20,12 +20,15 @@
                         </fieldset>
 
                         <div class="submit-button" id="payment-btn">
-                            <button id="submit-button-btn" class="btn btn-primary" name="Submit">
+                            {% if order.user_id == request.user.id %}
+                            <p class="centered-p"><strong> You have already purchased TraceSense!</p></strong> {% else %}
+                                <button id="submit-button-btn" class="btn btn-primary" name="Submit">
+                                    {% endif %}
                                 <span>Complete Order!</span>
                             </button>
-                            <p class="small text-danger my-0">
-                                <span>Your card will be charged <strong>£200 pounds</strong></span>
-                            </p>
+                                <p class="small text-danger my-0">
+                                    <span>Your card will be charged <strong>£200 pounds</strong></span>
+                                </p>
                         </div>
                         <div id="card-errors"></div>
                     </div>
