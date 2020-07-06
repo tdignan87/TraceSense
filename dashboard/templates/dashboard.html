@@ -35,19 +35,20 @@
                     </div>
                 </div>
             </div>
-            {% for order in orders %} {% if user.id == order.user_id %}
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body-account">
-
-                        <p>Subscription Type: <strong>Subscribed</strong></p>
-                        {% else %}
-                        <p>Subscription Type: <strong>Free</strong></p>
-
+                        <h5 class="card-title-user">Subscription Details:</h5>
+                        {% if order.user_id == request.user.id %}
+                        <p class="centered-p"><strong> Subscribed User</p></strong>
+                            <p class="centered-p"><strong>Name:</strong> {{order.full_name}}</p>
+                            <p class="centered-p"><strong>Date Subscribed:</strong> {{order.date}}</p>
+                            {% else %}
+                            <p class="centered-p"><strong> Free User</p></strong>
+                                <a href="{% url 'pricing_page' %}">Click here to view our pricing page</a> {% endif %}
                     </div>
                 </div>
             </div>
-            {% endif %} {% endfor %}
 
 
         </div>
