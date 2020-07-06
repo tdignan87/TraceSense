@@ -11,13 +11,13 @@
                 <p><strong>Menu</strong></p>
             </div>
             <a href="{% url 'new_audit' %}" class="list-group-item list-group-item-action bg-light">New Audit</a>
-            <a href="{% url 'list_audits' %}" class="list-group-item list-group-item-action bg-light">Edit Audits</a> {% for order in order %}
+            <a href="{% url 'list_audits' %}" class="list-group-item list-group-item-action bg-light">Edit Audits</a> {% for order in orders %}
             <a href="{% url 'open_actions' %}" class="list-group-item list-group-item-action bg-light">Outstanding Actions</a> {% endfor %}
             <a href="{% url 'completed_actions' %}" class="list-group-item list-group-item-action bg-light">Completed Actions</a>
             <div class="section-head">
                 <p>Settings</p>
             </div>
-            {% for order in order %}
+            {% for order in orders %}
             <a href="#" class=" disabled list-group-item list-group-item-action bg-light" id="department-nav">Departments</a>
             <a href="#" class="list-group-item list-group-item-action bg-light" id="production-nav">Production Areas</a>
             <a href="#" class=" disabled list-group-item list-group-item-action bg-light" id="alert-nav">Alert Management</a>{% endfor %}
