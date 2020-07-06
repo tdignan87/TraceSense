@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.contrib.auth import user_logged_in
+from checkout.models import Order
+
 
 
 def main_page(request):
@@ -18,5 +19,7 @@ def about_page(request):
 
 def pricing_page(request):
     """ A view to return the pricing page """
-    return render(request,"pages/pricing_page.html")
+    order = Order.objects.get()
+    context={'order':order}
+    return render(request,"pages/pricing_page.html",context)
 
